@@ -1,0 +1,7 @@
+<nav class="rail" aria-label="Sections">
+  <ol>
+    {%- for section in site.sections %}
+    <li><a href="#{{ section.id }}">{{ section.label }}</a></li>
+    {%- endfor %}
+  </ol>
+</nav>

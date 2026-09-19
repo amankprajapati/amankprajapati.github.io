@@ -1,0 +1,32 @@
+<article class="entry" id="downfall">
+  <span class="tag">Course project</span>
+  <h3>Downfall: a PPO agent for a four stage 3D obstacle course</h3>
+  <p class="meta"><span class="venue">Course project, EC456 Reinforcement Learning, IIIT Dharwad</span> &nbsp;·&nbsp; with Arjit Verma</p>
+  <figure class="fig" data-fig>
+    {% include "figures/downfall.svg" %}
+    <figcaption>Observations are only what a player could infer quickly: five raycast distances with a type code, a vector to the goal, the stage index, an on ground flag and vertical velocity.</figcaption>
+  </figure>
+
+  <div class="videos">
+    <div class="vcard">
+      <button type="button" class="vstill" data-src="https://drive.google.com/file/d/1JAozUcEceznnDJxLpSkeYGkTx8ir7UGh/preview" aria-label="Play: Trained agent, all four stages"><span class="play"><i></i></span></button>
+      <span class="vlabel">Trained agent, all four stages<span>Watch the run &nbsp;·&nbsp; <a href="https://drive.google.com/file/d/1JAozUcEceznnDJxLpSkeYGkTx8ir7UGh/view?usp=sharing" target="_blank" rel="noopener">open in Drive</a></span></span>
+    </div>
+    <div class="vcard">
+      <button type="button" class="vstill" data-src="https://drive.google.com/file/d/1De_3nL8y6AI0GQD_cVpaFH-izSjZn2__/preview" aria-label="Play: Training in progress"><span class="play"><i></i></span></button>
+      <span class="vlabel">Training in progress<span>PPO learning the course &nbsp;·&nbsp; <a href="https://drive.google.com/file/d/1De_3nL8y6AI0GQD_cVpaFH-izSjZn2__/view?usp=sharing" target="_blank" rel="noopener">open in Drive</a></span></span>
+    </div>
+  </div>
+  <p style="font-family:var(--sans); font-size:14px; margin-top:12px">
+    <a href="https://github.com/amankprajapati/RL_Project_EC456">Code on GitHub</a>
+  </p>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Downfall is a four stage 3D obstacle course built in Godot, closer in spirit to Fall Guys than to a standard benchmark. All four stages have to be cleared in a single episode, and the agent gets no hard coded path.</p>
+      <p>The policy sees a deliberately thin observation vector: normalized raycast distances in five directions with a type code for ground, wall or hazard, a vector to the current stage goal, a one hot stage index, an on ground flag and vertical velocity. It outputs continuous movement, rotation, and a jump value thresholded into a discrete jump. Reward is shaped from progress toward the goal, a small per step time penalty so standing still is never optimal, a large bonus at each stage gate, and a penalty for falling below the safe height or being hit by a hazard.</p>
+      <p>PPO from Stable Baselines3 trains across eight parallel Godot instances at five times game speed for a million environment steps, logged to TensorBoard. All reward logic lives in the Godot scripts and is exposed to Python through a small bridge, so changing the incentive structure never touches the training code. That separation is what made iterating on the reward model faster than iterating on the policy.</p>
+    </div>
+  </details>
+</article>

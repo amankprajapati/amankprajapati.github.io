@@ -1,0 +1,26 @@
+<article class="entry" id="ddish">
+  <span class="tag review">Under review</span>
+  <h3>DIS(H)covering nucleus-wise gene signal counts using self-supervised contrastive learning</h3>
+  <p class="meta"><span class="venue">Under review, MICCAI 2026</span> &nbsp;·&nbsp; MIND Lab, IIT Ropar &nbsp;·&nbsp; Prajapati, Mondal et al.</p>
+  <figure class="fig" data-fig>
+    {% include "figures/ddish.svg" %}
+    <figcaption>Top row uses the project's own images: annotation on the left, the fine tuned detector's output wiping in from the right. The inference row is an illustration on a second D-DISH patch; its outlines, signal marks and counts were made with simple image processing for this page, not by the trained models. In practice the ratio is taken over at least 20 nuclei and the final call rests with the pathologist.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">86.41%</span><span class="k">F1 at IoU 0.5</span></li>
+    <li><span class="v">88.15%</span><span class="k">mAP at 0.5</span></li>
+    <li><span class="v">39%</span><span class="k">less manual inspection time</span></li>
+    <li><span class="v">15,500</span><span class="k">annotated nuclei</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Dual in situ hybridization slides are still scored by hand. A pathologist counts HER2 and CEP17 signals nucleus by nucleus across hundreds of nuclei per case, then takes a ratio that decides treatment. The work is slow, and counts drift between readers and between sessions.</p>
+      <p>The pipeline learns what nuclei and signals look like before it sees a single label. A SimCLR encoder is pretrained on unlabeled D-DISH crops: two augmented views of the same crop are pulled together in embedding space while views of different crops are pushed apart. That encoder is then placed inside a YOLO architecture and fine tuned on the annotated subset, so the labeled data is spent on localizing nuclei and resolving individual signals rather than on learning tissue appearance from scratch.</p>
+      <p>At inference a patch is cropped from the slide, a segmentation model outlines each nucleus, and the detector finds the HER2 and CEP17 signals, each assigned to the nucleus mask that contains it. The counts appear nucleus by nucleus in an interactive web viewer where they can be checked and corrected, and the HER2 to CEP17 ratio computed from them indicates whether the patient is eligible for anti-HER2 therapy.</p>
+      <p>We also introduced the first comprehensive D-DISH dataset of this kind: 239 whole slide images from 19 breast cancer patients, of which 66 are annotated at roughly 15,500 nuclei, with public release planned. The final model reaches F1 of 86.41% at IoU 0.5, mAP of 88.15% at 0.5, precision 88.10% and recall 84.78%, and cut manual slide inspection time by about 39%.</p>
+    </div>
+  </details>
+</article>

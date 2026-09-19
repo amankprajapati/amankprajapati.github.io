@@ -1,0 +1,22 @@
+<h2 class="band-title" id="experience">Experience</h2>
+{%- for group in experience.groups %}
+<p class="sub-band">{{ group.group }}</p>
+{%- for item in group.items %}
+<div class="xp">
+  <span class="when">{{ item.when }}</span>
+  <div>
+    <div class="where">{{ item.where }}</div>
+    <div class="what">{{ item.role }}</div>
+    <p>{{ item.summary }}</p>
+    {%- if item.link %}
+    <a class="jump" href="{{ item.link.href }}">{{ item.link.label }}</a>
+    {%- endif %}
+    {%- if item.details %}
+    {%- set detailsFile = item.details %}
+    {% include "partials/more.njk" %}
+    {%- endif %}
+  </div>
+</div>
+{%- endfor %}
+{%- endfor %}
+<p class="skills">{{ experience.skills }}</p>

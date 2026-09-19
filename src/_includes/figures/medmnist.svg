@@ -1,0 +1,28 @@
+<svg viewBox="0 0 680 290" role="img" aria-label="Real MedMNIST test images from four modalities are routed by a parent random forest to one expert model per modality, which makes the diagnosis, and a permutation importance map shows which pixels the pneumonia model relies on.">
+<circle cx="28" cy="21.5" r="8" fill="var(--accent)"/><text x="28" y="25.2" text-anchor="middle" class="svg-stepn">1</text><text class="svg-title" x="42" y="26">Input, 28 × 28 pixels</text>
+<image x="20" y="38" width="64" height="64" preserveAspectRatio="none" style="image-rendering:pixelated" href="assets/img/medmnist/oct.png"/><rect x="20" y="38" width="64" height="64" fill="none" stroke="var(--rule)"/>
+<text class="svg-label" x="20" y="118" style="font-size:11.5px">OCT</text><text class="svg-label" x="20" y="132" style="font-size:10.5px;fill:var(--ink-faint)">4 classes</text>
+<image x="104" y="38" width="64" height="64" preserveAspectRatio="none" style="image-rendering:pixelated" href="assets/img/medmnist/chest-xray.png"/><rect x="104" y="38" width="64" height="64" fill="none" stroke="var(--rule)"/>
+<text class="svg-label" x="104" y="118" style="font-size:11.5px">Chest X ray</text><text class="svg-label" x="104" y="132" style="font-size:10.5px;fill:var(--ink-faint)">2 classes</text>
+<image x="188" y="38" width="64" height="64" preserveAspectRatio="none" style="image-rendering:pixelated" href="assets/img/medmnist/fundus.png"/><rect x="188" y="38" width="64" height="64" fill="none" stroke="var(--rule)"/>
+<text class="svg-label" x="188" y="118" style="font-size:11.5px">Fundus</text><text class="svg-label" x="188" y="132" style="font-size:10.5px;fill:var(--ink-faint)">5 grades</text>
+<image x="272" y="38" width="64" height="64" preserveAspectRatio="none" style="image-rendering:pixelated" href="assets/img/medmnist/ultrasound.png"/><rect x="272" y="38" width="64" height="64" fill="none" stroke="var(--rule)"/>
+<text class="svg-label" x="272" y="118" style="font-size:11.5px">Ultrasound</text><text class="svg-label" x="272" y="132" style="font-size:10.5px;fill:var(--ink-faint)">2 classes</text>
+<path class="arrow" d="M360,70 L392,70"/>
+<circle cx="406" cy="21.5" r="8" fill="var(--accent)"/><text x="406" y="25.2" text-anchor="middle" class="svg-stepn">2</text><text class="svg-title" x="420" y="26">Route by modality</text>
+<rect x="398" y="42" width="170" height="56" rx="3" fill="#EEF2F7" stroke="#A9B7CC"/><text class="svg-title" x="410" y="64" style="font-size:12px">parent random forest</text><text class="svg-label" x="410" y="84" style="font-size:11.5px">98.7% modality accuracy</text>
+<path d="M483,100 L483,146 L200,146 L200,174" fill="none" stroke="#98A1AD" stroke-width="1.2" marker-end="url(#ar)"/>
+<circle cx="28" cy="165.5" r="8" fill="var(--accent)"/><text x="28" y="169.2" text-anchor="middle" class="svg-stepn">3</text><text class="svg-title" x="42" y="170">Expert per modality</text>
+<rect x="20" y="180" width="196" height="20" rx="2" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="28" y="194" style="font-size:11px">OCT</text><text class="svg-num" x="208" y="194" text-anchor="end" style="font-size:10.5px">random forest</text>
+<rect x="20" y="204" width="196" height="20" rx="2" fill="#E9F0FA" stroke="var(--accent)"/><text class="svg-label" x="28" y="218" style="font-size:11px">Chest X ray</text><text class="svg-num" x="208" y="218" text-anchor="end" style="font-size:10.5px">XGBoost</text>
+<rect x="20" y="228" width="196" height="20" rx="2" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="28" y="242" style="font-size:11px">Fundus</text><text class="svg-num" x="208" y="242" text-anchor="end" style="font-size:10.5px">XGBoost</text>
+<rect x="20" y="252" width="196" height="20" rx="2" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="28" y="266" style="font-size:11px">Ultrasound</text><text class="svg-num" x="208" y="266" text-anchor="end" style="font-size:10.5px">random forest</text>
+<path class="arrow" d="M220,214 L250,214"/>
+<circle cx="264" cy="165.5" r="8" fill="var(--accent)"/><text x="264" y="169.2" text-anchor="middle" class="svg-stepn">4</text><text class="svg-title" x="278" y="170">Diagnose</text>
+<rect class="anim pop" x="256" y="180" width="130" height="92" rx="3" fill="#fff" stroke="var(--rule)" style="animation:popIn 6s ease-out infinite"/>
+<text class="svg-label" x="266" y="200" style="font-size:11px">pneumonia vs normal</text><text class="svg-num" x="266" y="226" style="font-size:13px">AUC 0.95</text><text class="svg-num" x="266" y="248" style="font-size:13px;fill:var(--ink-soft)">F1 0.88</text>
+<path class="arrow" d="M390,226 L420,226"/>
+<circle cx="434" cy="165.5" r="8" fill="var(--accent)"/><text x="434" y="169.2" text-anchor="middle" class="svg-stepn">5</text><text class="svg-title" x="448" y="170">Explain</text>
+<image x="426" y="180" width="92" height="92" style="image-rendering:pixelated" href="assets/img/medmnist/pneumonia-importance.png"/><rect x="426" y="180" width="92" height="92" fill="none" stroke="var(--rule)"/>
+<text class="svg-label" x="528" y="196" style="font-size:11.5px">permutation</text><text class="svg-label" x="528" y="211" style="font-size:11.5px">importance on</text><text class="svg-label" x="528" y="226" style="font-size:11.5px">the pixel grid;</text><text class="svg-label" x="528" y="241" style="font-size:11.5px">red pixels drive</text><text class="svg-label" x="528" y="256" style="font-size:11.5px">the prediction</text>
+</svg>

@@ -1,0 +1,24 @@
+<article class="entry" id="blaq">
+  <span class="tag prep">In preparation</span>
+  <h3>BLAQ: bounded learnable affine quantization</h3>
+  <p class="meta"><span class="venue">Manuscript in preparation</span> &nbsp;·&nbsp; Prajapati, Saha, Jagadish</p>
+  <figure class="fig" data-fig>
+    {% include "figures/blaq.svg" %}
+    <figcaption>Post training quantization sets the grid. Training only moves each value inside a bounded window around its starting point, which is what keeps batch norm statistics valid. QAT here is standard quantization aware training.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">13.68 → 74.93</span><span class="k">INT4 accuracy, CIFAR-100</span></li>
+    <li><span class="v">+3.78</span><span class="k">points over standard QAT</span></li>
+    <li><span class="v">0</span><span class="k">per model hyperparameter tuning</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Quantization aware training normally makes every quantization parameter freely learnable. That gives the optimizer room to drift, batch normalization statistics stop matching the activations they were estimated from, and recovering accuracy turns into a per model hyperparameter search.</p>
+      <p>BLAQ starts from the post training quantization parameters and learns only a small bounded correction on top of them. The bound is the mechanism: updates cannot wander far enough to break the batch norm estimates, so training stays stable without manual tuning.</p>
+      <p>At INT4 on CIFAR-100, plain post training quantization of ResNet-18 collapses to 13.68% accuracy. BLAQ recovers 74.93%, which is 3.78 points above standard quantization aware training, and it gets there without per model hyperparameter search.</p>
+    </div>
+  </details>
+</article>

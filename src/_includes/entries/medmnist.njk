@@ -1,0 +1,25 @@
+<article class="entry" id="medmnist">
+  <span class="tag">Fellowship project</span>
+  <h3>Explainability of tree based ensembles for medical image classification</h3>
+  <p class="meta"><span class="venue">IASc–INSA–NASI Summer Research Fellowship 2025</span> &nbsp;·&nbsp; Guide: Dr. Srikrishnan Divakaran, Krea University</p>
+  <figure class="fig" data-fig>
+    {% include "figures/medmnist.svg" %}
+    <figcaption>Thumbnails are real MedMNIST test images. The importance map was recomputed for this page from a random forest on PneumoniaMNIST (test AUC 0.94); besides the lung fields it lights up the top and bottom edges, the kind of non-anatomical cue that pixel level explanations exist to surface.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">98.7%</span><span class="k">modality routing accuracy</span></li>
+    <li><span class="v">0.95 / 0.91</span><span class="k">AUC, pneumonia / breast</span></li>
+    <li><span class="v">&lt;0.01 s</span><span class="k">inference per image, CPU</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Deep networks are accurate on medical images and difficult to interrogate. This project asked how far tree ensembles get on raw pixels when interpretability is a hard requirement rather than a nice extra. The pipeline is two stage: a parent model identifies the imaging modality across OCTMNIST, PneumoniaMNIST, RetinaMNIST and BreastMNIST, then a modality specific model makes the diagnosis. The structure mirrors how a hospital actually routes an image.</p>
+      <p>Each 28 by 28 image is flattened to a 784 dimensional vector with no convolutional features anywhere in the pipeline, so any performance is attributable to the ensembles themselves. OCT was downsampled to 10,000 training images so the parent classifier would not be dominated by it, against roughly 5,800 pneumonia, 1,400 retina and 546 breast images.</p>
+      <p>The parent random forest reaches 98.7% on modality, so very little error cascades into the second stage. Overall hierarchical accuracy is about 78%, and the loss is concentrated in five class diabetic retinopathy grading at 28 by 28 resolution. Binary tasks land at 88 to 90%, with AUC 0.95 for pneumonia and 0.91 for breast ultrasound, and inference stays under 0.01 seconds per image on CPU.</p>
+      <p>The interpretability results were the useful part. Permutation importance, reshaped back into the image grid, shows the modality classifier reading the central chest field and the horizontal retinal layers. SHAP and LIME on individual cases line up with clinical reasoning. A shallow surrogate tree fitted to the retina model exposed a shortcut: it was splitting mostly on mean image brightness, which could be genuine dark lesions or could be photography conditions. That is exactly the kind of failure a pixel level explanation is for.</p>
+    </div>
+  </details>
+</article>

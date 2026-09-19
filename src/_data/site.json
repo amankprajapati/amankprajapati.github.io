@@ -1,0 +1,85 @@
+{
+  "name": "Aman Kumar Prajapati",
+  "title": "Aman Kumar Prajapati | research portfolio",
+  "description": "Research portfolio of Aman Kumar Prajapati: self-supervised learning, learning from imperfect data, physics informed models and AI for cancer diagnostics.",
+  "role": "AI and Computer Vision Engineer, Big Vision LLC, Bangalore",
+  "statement": "I work on making vision models small enough and stable enough to run where the data actually is: on a microscope slide scanner, on a satellite bus, on a single GPU serving fifty live cameras.",
+  "sub": "That has taken me through self supervised detection for pathology, physics informed anomaly detection, quantization aware training, and sensor fusion for grain storage. The thread is the same across all of them: work out what the constraint really is, then design the representation around it.",
+  "interests": [
+    {
+      "title": "Learning from imperfect data",
+      "text": "Models that stay reliable when labels are scarce, noisy or missing altogether."
+    },
+    {
+      "title": "Self supervised learning",
+      "text": "Representations learned from unlabeled data, so expert annotation is spent only where it matters."
+    },
+    {
+      "title": "Physics informed world models",
+      "text": "Learned models of how systems evolve that respect known dynamics, and can say when an observation breaks them."
+    },
+    {
+      "title": "AI for medicine",
+      "text": "Developing foundation models for medicine, pretrained at scale on pathology and clinical data, alongside quantitative, interpretable tools for cancer diagnosis."
+    }
+  ],
+  "links": [
+    {
+      "label": "amankprajapati07@gmail.com",
+      "href": "mailto:amankprajapati07@gmail.com",
+      "icon": "envelope",
+      "external": false
+    },
+    {
+      "label": "github.com/amankprajapati",
+      "href": "https://github.com/amankprajapati",
+      "icon": "github",
+      "external": false
+    },
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=Z9BhvZQAAAAJ&hl=en",
+      "icon": "google-scholar",
+      "external": true
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/aman-kumar-prajapati",
+      "icon": "linkedin",
+      "external": true
+    },
+    {
+      "label": "Curriculum vitae (PDF)",
+      "href": "https://drive.google.com/file/d/1QrlwYCWwUNI0XomcWhEUtx7jdS8A9BGA/view?usp=sharing",
+      "icon": "file-pdf",
+      "external": true
+    }
+  ],
+  "footer": {
+    "email": "amankprajapati07@gmail.com",
+    "github": "https://github.com/amankprajapati",
+    "location": "Bangalore, India"
+  },
+  "sections": [
+    {
+      "id": "experience",
+      "label": "Experience"
+    },
+    {
+      "id": "publications",
+      "label": "Publications and posters"
+    },
+    {
+      "id": "research",
+      "label": "Current research"
+    },
+    {
+      "id": "projects",
+      "label": "Projects"
+    },
+    {
+      "id": "awards",
+      "label": "Awards"
+    }
+  ]
+}

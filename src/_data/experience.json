@@ -1,0 +1,83 @@
+{
+  "groups": [
+    {
+      "group": "Industry",
+      "items": [
+        {
+          "when": "Jan 2026 – present",
+          "where": "Big Vision LLC",
+          "role": "AI and Computer Vision Engineer, Bangalore. Intern from January to May 2026",
+          "summary": "End to end computer vision pipelines for client deployments, containerized with Docker and Kubernetes and distributed with Ray. Accelerated vision language model inference with vLLM, integrated Kafka for real time streaming, and tuned Qwen3-VL variants. Current build handles 50 parallel live streams under one second on a single RTX 5090.",
+          "details": "video-pipeline"
+        },
+        {
+          "when": "Aug – Oct 2024",
+          "where": "Strative.ai",
+          "role": "ML Engineer intern, remote",
+          "summary": "Retrieval augmented generation pipeline with LangChain, Llama 3, Elasticsearch and Milvus, reaching 89% top-10 retrieval accuracy on Natural Questions. Deployed with Ray on GKE, cutting ingestion, retrieval and evaluation time by 40%.",
+          "details": "rag"
+        },
+        {
+          "when": "May – Jul 2024",
+          "where": "L&T Technology Services",
+          "role": "ML Engineer intern, Bangalore",
+          "summary": "YOLOv5 and RT-DETR fine tuned for real time crack detection on railway track imagery at 86% precision, with OpenMPI parallel post processing for a 68% improvement in compute time, plus a WireGuard server linking more than 40 remote devices.",
+          "details": "crack-detection"
+        },
+        {
+          "when": "Apr – Aug 2024",
+          "where": "Humors Tech",
+          "role": "Data Scientist intern, remote, biotech startup",
+          "summary": "RNN and LSTM models in PyTorch classifying lung health as poor, normal or good from breath sensor data, reaching a 92% F1 score, with a Flask dashboard for real time status and model insight."
+        }
+      ]
+    },
+    {
+      "group": "Research",
+      "items": [
+        {
+          "when": "Aug 2025 – Feb 2026",
+          "where": "Medical Intelligence, Neuroimaging and Data Lab, IIT Ropar",
+          "role": "Research intern, Rupnagar",
+          "summary": "Built the end to end pipeline for quantifying HER2 and CEP17 gene signals in D-DISH pathology images, combining self supervised contrastive pretraining with a YOLO detector. Assembled and annotated the dataset behind it. Manuscript under review at MICCAI 2026.",
+          "link": {
+            "href": "#ddish",
+            "label": "See the project under current research"
+          }
+        },
+        {
+          "when": "May – Jun 2025",
+          "where": "U R Rao Satellite Centre, ISRO",
+          "role": "Research intern, Bangalore",
+          "summary": "Physics informed autoencoder for denoising gyroscope telemetry and flagging non physical anomalies, integrated with cyclic redundancy checks into a hybrid detection pipeline that raised alerts minutes earlier than the existing rule based checks.",
+          "link": {
+            "href": "#isro",
+            "label": "See the project"
+          }
+        },
+        {
+          "when": "Mar – Aug 2025",
+          "where": "Agro-Bio Technology Lab, IIT Kharagpur",
+          "role": "Research intern, remote, with the Food Corporation of India",
+          "summary": "Piloted post-harvest spoilage reduction across three FCI depots. Cleaned depot sensor data, automated daily heat and humidity maps with hotspot alerts, and modelled heat and moisture migration to predict shelf life and flag high risk piles.",
+          "link": {
+            "href": "#grain",
+            "label": "See the poster"
+          }
+        }
+      ]
+    },
+    {
+      "group": "Teaching",
+      "items": [
+        {
+          "when": "Oct 2023 – Nov 2024",
+          "where": "Atal Innovation Lab, IIIT Dharwad",
+          "role": "Undergraduate teaching assistant",
+          "summary": "Taught embedded electronics to high school students: microcontrollers, sensors, C and Python, and 3D modelling in Fusion 360. Supervised projects from schematic to demo and mentored teams in national hackathons, several finishing in the top 10% nationally."
+        }
+      ]
+    }
+  ],
+  "skills": "Python, C++, MATLAB, R. PyTorch, TensorFlow, PennyLane. Docker, Kubernetes, Ray, Kafka, vLLM, Linux, Git, Azure. OpenCV, scikit-learn, NumPy, SciPy, LangChain."
+}

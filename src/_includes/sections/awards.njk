@@ -1,0 +1,14 @@
+<h2 class="band-title" id="awards">Awards, fellowships and academics</h2>
+{%- for award in awards %}
+<div class="award">
+  <span class="yr">{{ award.year }}</span>
+  <div>
+    <div class="t">{{ award.title }}</div>
+    <div class="d">{{ award.detail }}</div>
+    {%- if award.details %}
+    {%- set detailsFile = award.details %}
+    {% include "partials/more.njk" %}
+    {%- endif %}
+  </div>
+</div>
+{%- endfor %}

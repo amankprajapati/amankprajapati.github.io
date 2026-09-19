@@ -1,0 +1,49 @@
+<svg viewBox="0 0 680 300" role="img" aria-label="Temperature and relative humidity fields across the paddy stack, changing day by day from 12 to 18 June 2025 alongside the daily heat and water budget.">
+<defs><linearGradient id="cbT"><stop offset="0" stop-color="#5a0000"/><stop offset=".3" stop-color="#d11a00"/><stop offset=".62" stop-color="#ff9d00"/><stop offset=".85" stop-color="#ffec3d"/><stop offset="1" stop-color="#fffbe0"/></linearGradient>
+<linearGradient id="cbR"><stop offset="0" stop-color="#00007f"/><stop offset=".2" stop-color="#0040ff"/><stop offset=".4" stop-color="#00d6ff"/><stop offset=".6" stop-color="#7dff7a"/><stop offset=".8" stop-color="#ffb000"/><stop offset="1" stop-color="#8b0000"/></linearGradient></defs>
+<text class="svg-title" x="20" y="22">Temperature field</text>
+<image id="gT0" x="30.0" y="34.0" width="198.4" height="201.5" style="transition:opacity .7s ease;opacity:1"/>
+<image id="gT1" x="30.0" y="34.0" width="198.4" height="201.5" style="transition:opacity .7s ease;opacity:0"/>
+<polygon points="30.0,71.2 56.0,35.9 222.2,133.2 57.9,229.3 42.4,213.8 39.3,123.9 30.0,86.7" fill="none" stroke="#9AA3AF"/>
+<circle cx="56.0" cy="40.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="62.0" y="36.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S1</text>
+<circle cx="56.0" cy="102.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="62.0" y="98.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S2</text>
+<circle cx="56.0" cy="164.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="62.0" y="160.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S3</text>
+<circle cx="56.0" cy="226.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="62.0" y="222.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S4</text>
+<circle cx="107.5" cy="71.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="113.5" y="67.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S5</text>
+<circle cx="107.5" cy="133.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="113.5" y="129.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S6</text>
+<circle cx="107.5" cy="195.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="113.5" y="191.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S7</text>
+<circle cx="159.0" cy="102.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="165.0" y="98.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S8</text>
+<circle cx="159.0" cy="164.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="165.0" y="160.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S9</text>
+<circle cx="219.1" cy="133.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="193.1" y="129.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S10</text>
+<circle cx="30.0" cy="71.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="36.0" y="67.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S11</text>
+<text class="svg-title" x="292" y="22">Relative humidity field</text>
+<image id="gR0" x="302.0" y="34.0" width="198.4" height="201.5" style="transition:opacity .7s ease;opacity:1"/>
+<image id="gR1" x="302.0" y="34.0" width="198.4" height="201.5" style="transition:opacity .7s ease;opacity:0"/>
+<polygon points="302.0,71.2 328.0,35.9 494.2,133.2 329.9,229.3 314.4,213.8 311.3,123.9 302.0,86.7" fill="none" stroke="#9AA3AF"/>
+<circle cx="328.0" cy="40.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="334.0" y="36.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S1</text>
+<circle cx="328.0" cy="102.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="334.0" y="98.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S2</text>
+<circle cx="328.0" cy="164.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="334.0" y="160.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S3</text>
+<circle cx="328.0" cy="226.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="334.0" y="222.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S4</text>
+<circle cx="379.5" cy="71.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="385.5" y="67.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S5</text>
+<circle cx="379.5" cy="133.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="385.5" y="129.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S6</text>
+<circle cx="379.5" cy="195.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="385.5" y="191.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S7</text>
+<circle cx="431.0" cy="102.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="437.0" y="98.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S8</text>
+<circle cx="431.0" cy="164.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="437.0" y="160.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S9</text>
+<circle cx="491.1" cy="133.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="465.1" y="129.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S10</text>
+<circle cx="302.0" cy="71.2" r="2.5" fill="#1B1F24" stroke="#fff" stroke-width=".8"/><text x="308.0" y="67.2" font-family="IBM Plex Sans" font-size="9.5" fill="#1B1F24" style="paint-order:stroke;stroke:#fff;stroke-width:2.2px;stroke-opacity:.75">S11</text>
+<rect x="20" y="254" width="200" height="7" rx="2" fill="url(#cbT)"/><text class="svg-num" x="20" y="274" style="font-size:10px;fill:var(--ink-soft)">28.8</text><text class="svg-num" x="220" y="274" text-anchor="end" style="font-size:10px;fill:var(--ink-soft)">35.6 °C</text>
+<rect x="292" y="254" width="200" height="7" rx="2" fill="url(#cbR)"/><text class="svg-num" x="292" y="274" style="font-size:10px;fill:var(--ink-soft)">50</text><text class="svg-num" x="492" y="274" text-anchor="end" style="font-size:10px;fill:var(--ink-soft)">98 % RH</text>
+<text class="svg-label" id="grain-tnote" x="20" y="292" style="font-size:11px"></text><text class="svg-label" id="grain-rnote" x="292" y="292" style="font-size:11px"></text>
+<rect x="566" y="34" width="100" height="200" rx="4" class="panel-bg"/>
+<text class="svg-title" x="576" y="54">Daily budget</text><text class="svg-label" x="576" y="70" style="font-size:11px">Miryalaguda</text>
+<text class="svg-num" id="grain-date" x="576" y="100" style="font-size:13px">12 Jun</text>
+<text class="svg-label" x="576" y="124" style="font-size:11px">heat, MJ</text><text class="svg-num" id="grain-dh" x="576" y="144" style="font-size:14px;fill:#B0721A">+0.064</text>
+<text class="svg-label" x="576" y="168" style="font-size:11px">water, kg</text><text class="svg-num" id="grain-dw" x="576" y="188" style="font-size:14px">-0.281</text>
+<circle class="grain-pip" cx="582" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="593" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="604" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="615" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="626" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="637" cy="214" r="3.2" fill="#C7D0DB"/>
+<circle class="grain-pip" cx="648" cy="214" r="3.2" fill="#C7D0DB"/>
+</svg>

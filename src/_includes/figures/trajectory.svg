@@ -1,0 +1,35 @@
+<svg viewBox="0 0 680 220" role="img" aria-label="Front camera video, IMU and GPS are encoded, fused by a transformer, and decoded into a five second forecast of path, speed and turn angle.">
+<circle cx="28" cy="21.5" r="8" fill="var(--accent)"/><text x="28" y="25.2" text-anchor="middle" class="svg-stepn">1</text><text class="svg-title" x="42" y="26">Inputs</text>
+<rect x="20" y="38" width="150" height="80" rx="3" fill="#E4E8EE"/><path d="M60,118 L88,56 L102,56 L130,118 Z" fill="#CDD3DC"/>
+<rect class="anim" x="84" y="84" width="16" height="11" rx="1.5" fill="#8793A3" style="--dx:-10px;animation:drift 4s ease-in-out infinite alternate"/><rect x="100" y="66" width="10" height="7" rx="1" fill="#9AA5B4"/><circle cx="118" cy="98" r="5" fill="#9AA5B4"/>
+<text class="svg-label" x="28" y="54" style="font-size:11px">front camera</text>
+<text class="svg-label" x="20" y="136" style="font-size:11px">IMU</text><polyline points="20,146.0 22,150.4 24,153.3 26,154.1 28,153.0 30,151.0 32,149.4 34,148.7 36,148.8 38,148.8 40,147.6 42,145.0 44,141.3 46,137.9 48,136.1 50,136.7 52,139.5 54,143.4 56,146.9 58,149.0 60,149.6 62,149.3 64,149.3 66,150.1 68,151.8 70,153.3 72,153.6 74,151.7 76,148.0 78,143.4 80,139.5 82,137.6 84,137.9 86,139.7 88,142.0 90,143.4 92,143.9 94,143.8 96,144.2 98,146.0 100,149.1 102,152.6 104,155.3 106,155.9 108,154.0 110,150.4 112,146.4 114,143.3 116,141.9 118,141.9 120,142.3 122,142.3 124,141.2 126,139.7 128,138.8 130,139.6 132,142.4 134,146.6 136,151.0 138,154.1 140,154.9 142,153.6 144,151.2 146,148.9 148,147.7 150,147.4 152,147.4 154,146.5 156,144.3 158,141.0 160,137.9 162,136.2 164,136.9 166,139.8 168,144.0 170,147.8" fill="none" stroke="var(--violet)" stroke-width="1.3" transform="translate(0,4)"/>
+<text class="svg-label" x="20" y="178" style="font-size:11px">GPS</text>
+<circle cx="24" cy="196.0" r="2.4" fill="var(--green)"/>
+<circle cx="39" cy="194.7" r="2.4" fill="var(--green)"/>
+<circle cx="54" cy="193.5" r="2.4" fill="var(--green)"/>
+<circle cx="69" cy="192.6" r="2.4" fill="var(--green)"/>
+<circle cx="84" cy="192.1" r="2.4" fill="var(--green)"/>
+<circle cx="99" cy="192.0" r="2.4" fill="var(--green)"/>
+<circle cx="114" cy="192.4" r="2.4" fill="var(--green)"/>
+<circle cx="129" cy="193.1" r="2.4" fill="var(--green)"/>
+<circle cx="144" cy="194.2" r="2.4" fill="var(--green)"/>
+<circle cx="159" cy="195.4" r="2.4" fill="var(--green)"/>
+<path class="arrow" d="M176,78 L204,78"/><path class="arrow" d="M176,160 L204,160"/>
+<circle cx="216" cy="21.5" r="8" fill="var(--accent)"/><text x="216" y="25.2" text-anchor="middle" class="svg-stepn">2</text><text class="svg-title" x="230" y="26">Encode</text>
+<rect x="208" y="56" width="110" height="44" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-title" x="218" y="75" style="font-size:12px">3D CNN</text><text class="svg-label" x="218" y="91" style="font-size:11px">short clips</text>
+<rect x="208" y="138" width="110" height="44" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-title" x="218" y="157" style="font-size:12px">sensor tokens</text><text class="svg-label" x="218" y="173" style="font-size:11px">normalised streams</text>
+<path class="arrow" d="M322,78 C340,78 336,110 352,112"/><path class="arrow" d="M322,160 C340,160 336,130 352,128"/>
+<circle cx="364" cy="21.5" r="8" fill="var(--accent)"/><text x="364" y="25.2" text-anchor="middle" class="svg-stepn">3</text><text class="svg-title" x="378" y="26">Fuse</text>
+<rect x="358" y="84" width="110" height="72" rx="3" fill="#EDE9F8" stroke="#8B7FC7"/><text class="svg-title" x="370" y="114" style="font-size:12px;fill:#3E3585">transformer</text><text class="svg-label" x="370" y="132" style="font-size:11px">temporal fusion</text>
+<path class="arrow" d="M472,120 L496,120"/>
+<circle cx="508" cy="21.5" r="8" fill="var(--accent)"/><text x="508" y="25.2" text-anchor="middle" class="svg-stepn">4</text><text class="svg-title" x="522" y="26">Forecast, 5 s</text>
+<rect x="500" y="38" width="160" height="164" rx="3" fill="#E4E8EE"/><path d="M526,202 L570,70 L590,70 L634,202 Z" fill="#CDD3DC"/>
+<path class="anim" d="M580,200 C580,160 584,120 606,84" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140" style="--len:140;animation:draw 3s ease-out infinite"/>
+<circle cx="580.6" cy="176.03200000000004" r="2.6" fill="#fff" stroke="var(--accent)"/>
+<circle cx="582.8" cy="152.256" r="2.6" fill="#fff" stroke="var(--accent)"/>
+<circle cx="587.3" cy="128.864" r="2.6" fill="#fff" stroke="var(--accent)"/>
+<circle cx="594.8" cy="106.048" r="2.6" fill="#fff" stroke="var(--accent)"/>
+<circle cx="606.0" cy="84.0" r="2.6" fill="#fff" stroke="var(--accent)"/>
+<text class="svg-label" x="508" y="56" style="font-size:11px">path, speed, turn angle</text>
+</svg>

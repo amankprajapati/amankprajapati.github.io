@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Contact icons: Font Awesome Free 6.7.2, https://fontawesome.com, CC BY 4.0 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  {%- for sheet in ["base", "layout", "masthead", "entry", "experience", "video", "figures", "animations", "responsive"] %}
+  <link rel="stylesheet" href="assets/css/{{ sheet }}.css">
+  {%- endfor %}
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+{% include "partials/svg-defs.svg" %}
+{{ content | safe }}
+</body>
+</html>

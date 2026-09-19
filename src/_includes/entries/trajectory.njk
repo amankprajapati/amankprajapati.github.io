@@ -1,0 +1,19 @@
+<article class="entry" id="driving">
+  <span class="tag">Independent project</span>
+  <h3>Trajectory forecasting for autonomous navigation on Indian roads</h3>
+  <p class="meta">Independent project &nbsp;·&nbsp; multimodal fusion of video, IMU and GPS</p>
+  <figure class="fig" data-fig>
+    {% include "figures/trajectory.svg" %}
+    <figcaption>Short video clips carry the scene, the sensor stream carries what the vehicle is actually doing, and the fusion has to agree with both.</figcaption>
+  </figure>
+
+  <p>Forecasts where the vehicle will be over the next five seconds, its path, speed and turn angle, by fusing front camera video with IMU and GPS. Built for Indian traffic, where lane markings are unreliable and the vehicles ahead are the better guide.</p>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Most driving datasets assume lane markings mean something. On Indian roads they are advisory, and the useful signal is usually the behaviour of the two vehicles ahead. This model fuses front facing video, IMU time series and GPS to forecast ego trajectory, speed and turn angle over a five second horizon.</p>
+      <p>3D CNNs encode short video clips for local motion, and a sensor transformer handles temporal fusion across the three streams. Signal normalization across inputs on very different scales turned out to matter more for stable training than anything in the architecture, which is a recurring lesson in multimodal work.</p>
+    </div>
+  </details>
+</article>

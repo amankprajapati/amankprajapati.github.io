@@ -1,0 +1,89 @@
+/* Experience timeline, skills line and awards list */
+
+.xp {
+  display:grid;
+  grid-template-columns:150px minmax(0,1fr);
+  gap:20px;
+  padding:16px 0;
+  border-bottom:1px solid var(--rule);
+}
+
+.xp .when {
+  font-family:var(--sans);
+  font-size:13.5px;
+  color:var(--ink-soft);
+  padding-top:3px;
+}
+
+.xp .where {
+  font-weight:600;
+  font-size:18px;
+}
+
+.xp .what {
+  font-family:var(--sans);
+  font-size:14px;
+  color:var(--ink-soft);
+  margin-top:1px;
+}
+
+.xp p {
+  margin:8px 0 0;
+  font-size:16.5px;
+}
+
+.award {
+  display:grid;
+  grid-template-columns:70px minmax(0,1fr);
+  gap:18px;
+  padding:13px 0;
+  border-bottom:1px solid var(--rule);
+}
+
+.award .yr {
+  font-family:var(--mono);
+  font-size:14px;
+  color:var(--accent);
+  padding-top:3px;
+}
+
+.award .t {
+  font-size:17px;
+}
+
+.award .d {
+  font-family:var(--sans);
+  font-size:13.5px;
+  color:var(--ink-soft);
+}
+
+.skills {
+  font-family:var(--sans);
+  font-size:15px;
+  color:var(--ink-soft);
+  margin-top:24px;
+}
+
+.xp details.more {
+  margin-top:10px;
+}
+
+.xp .more-body p {
+  font-size:16px;
+}
+
+.xp .jump {
+  font-family:var(--sans);
+  font-size:13.5px;
+  margin-top:8px;
+  display:inline-block;
+}
+
+.award details.more {
+  margin-top:6px;
+}
+
+.award .more-body p {
+  font-size:15.5px;
+  margin-bottom:.7em;
+}

@@ -1,0 +1,24 @@
+<article class="entry" id="qnn">
+  <span class="tag">Conference paper</span>
+  <h3>Compress, encode, diagnose: PCA-enhanced quantum neural networks for breast cancer classification</h3>
+  <p class="meta"><span class="venue">IEEE RASSE 2025, Singapore</span> &nbsp;·&nbsp; Prajapati, Saha, Ahsan, Aswath Babu H</p>
+  <figure class="fig" data-fig>
+    {% include "figures/qnn.svg" %}
+    <figcaption>Thirty measurements are compressed to five principal components, one rotation angle per qubit, and a small classical network turns the five qubit readouts into the diagnosis. Classical compression is what buys usable quantum capacity on a five qubit register.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">96.49%</span><span class="k">accuracy, 5 qubits with PCA</span></li>
+    <li><span class="v">0.97</span><span class="k">F1, recall 0.98</span></li>
+    <li><span class="v">63% vs 18%</span><span class="k">accuracy under noise, hybrid vs classical</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>On near term quantum hardware the binding constraint is not the model, it is the qubit count: you can only encode as many features as you have qubits. This paper asks whether classical compression can buy quantum capacity. We reduce 30 clinical features to 5 principal components, encode each component as a rotation angle on one qubit, and let a variational circuit with ring entanglement supply the nonlinear mapping before a small classical head makes the call.</p>
+      <p>On the Wisconsin Diagnostic Breast Cancer set, the five qubit hybrid with PCA reached 96.49% accuracy with recall 0.98 and F1 0.97, slightly ahead of the 30 feature classical baseline at 95.61% and with fewer missed malignancies. The ten qubit circuit without PCA managed only 88.60%, which is the result I find most instructive: adding qubits without fixing the encoding made the model worse.</p>
+      <p>The robustness test is the other half of the story. Under additive Gaussian noise at 0.5 of each feature's standard deviation, the hybrid held 63.16% accuracy while the matched classical model collapsed to 18.42%. Circuits were simulated in PennyLane with a PyTorch head, trained end to end with parameter shift gradients.</p>
+    </div>
+  </details>
+</article>

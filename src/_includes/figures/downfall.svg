@@ -1,0 +1,25 @@
+<svg viewBox="0 0 680 230" role="img" aria-label="A PPO agent crosses four obstacle stages in one episode, sensing with five raycasts, while episode return grows and stage markers light up.">
+<rect x="20" y="14" width="152" height="150" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="30" y="32" style="font-size:11px">1  platforms</text>
+<rect x="180" y="14" width="152" height="150" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="190" y="32" style="font-size:11px">2  bombs</text>
+<rect x="340" y="14" width="152" height="150" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="350" y="32" style="font-size:11px">3  spike roller</text>
+<rect x="500" y="14" width="152" height="150" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="510" y="32" style="font-size:11px">4  goal gate</text>
+<rect x="30" y="140" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="90" y="118" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="185" y="130" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="250" y="112" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="345" y="128" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="410" y="118" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="505" y="134" width="50" height="8" rx="2" fill="#C8CFD9"/>
+<rect x="570" y="120" width="56" height="8" rx="2" fill="#C8CFD9"/>
+<circle class="anim" cx="232" cy="66" r="8" fill="var(--red)" style="--ny:18px;animation:nudge 1.4s ease-in infinite alternate"/>
+<g class="anim" style="animation:spin 3s linear infinite"><rect x="392" y="80" width="30" height="4" fill="#7E8A99"/><rect x="405" y="67" width="4" height="30" fill="#7E8A99"/></g>
+<rect x="620" y="70" width="8" height="50" fill="var(--green)"/><rect x="600" y="62" width="48" height="8" rx="2" fill="var(--green)" opacity=".35"/>
+<g class="anim" style="animation:agentRun 10s linear infinite"><g stroke="#1F4E9C" stroke-opacity=".45" stroke-width="1"><line x1="0" y1="0" x2="34" y2="-6"/><line x1="0" y1="0" x2="30" y2="-22"/><line x1="0" y1="0" x2="16" y2="-32"/><line x1="0" y1="0" x2="34" y2="12"/><line x1="0" y1="0" x2="-20" y2="-20"/></g><rect x="-7" y="-7" width="14" height="14" rx="2" fill="var(--accent)"/></g>
+<text class="svg-label" x="20" y="190" style="font-size:11px">episode return</text><rect x="20" y="198" width="300" height="8" rx="4" fill="#E2E6EB"/><rect class="anim" x="20" y="198" width="300" height="8" rx="4" fill="var(--green)" style="transform-origin:left;transform-box:fill-box;animation:meter 10s linear infinite"/>
+<text class="svg-label" x="360" y="190" style="font-size:11px">stages cleared</text>
+<circle class="anim" cx="366" cy="202" r="6" fill="#C7D0DB" style="animation:pip1 10s linear infinite"/>
+<circle class="anim" cx="386" cy="202" r="6" fill="#C7D0DB" style="animation:pip2 10s linear infinite"/>
+<circle class="anim" cx="406" cy="202" r="6" fill="#C7D0DB" style="animation:pip3 10s linear infinite"/>
+<circle class="anim" cx="426" cy="202" r="6" fill="#C7D0DB" style="animation:pip4 10s linear infinite"/>
+<text class="svg-label" x="460" y="206" style="font-size:11px">PPO, 8 parallel Godot envs</text>
+</svg>

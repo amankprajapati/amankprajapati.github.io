@@ -1,0 +1,137 @@
+<svg viewBox="0 0 680 476" role="img" aria-label="Training: whole slide images are tiled into unlabeled crops, two augmented views of each crop train a YOLO backbone with SimCLR, and the detector is fine tuned on annotated nuclei. Inference: a patch is cropped, nuclei are segmented, HER2 and CEP17 signals are detected, counts are reviewed per nucleus in a web viewer, and the HER2 to CEP17 ratio gives the therapy call.">
+<defs><image id="ddpatch" href="assets/img/ddish/slide-patch.jpg" width="256" height="256"/><clipPath id="wipeClip"><rect class="anim" x="506" y="58" width="150" height="150" style="animation:wipe 9s ease-in-out infinite"/></clipPath></defs>
+<text class="svg-lane" x="20" y="18">TRAINING</text><line x1="89.2" y1="14" x2="660" y2="14" stroke="var(--rule)"/>
+<circle cx="28" cy="39.5" r="8" fill="var(--accent)"/><text x="28" y="43.2" text-anchor="middle" class="svg-stepn">1</text><text class="svg-title" x="42" y="44">Tile the slide</text>
+<use href="#ddpatch" transform="translate(20,58) scale(0.5859)"/>
+<line x1="57.5" y1="58" x2="57.5" y2="208" stroke="#fff" stroke-opacity=".75"/><line x1="20" y1="95.5" x2="170" y2="95.5" stroke="#fff" stroke-opacity=".75"/>
+<line x1="95.0" y1="58" x2="95.0" y2="208" stroke="#fff" stroke-opacity=".75"/><line x1="20" y1="133.0" x2="170" y2="133.0" stroke="#fff" stroke-opacity=".75"/>
+<line x1="132.5" y1="58" x2="132.5" y2="208" stroke="#fff" stroke-opacity=".75"/><line x1="20" y1="170.5" x2="170" y2="170.5" stroke="#fff" stroke-opacity=".75"/>
+<rect x="20" y="95.5" width="37.5" height="37.5" fill="none" stroke="var(--accent)" stroke-width="2.2"/>
+<rect x="20" y="58" width="150" height="150" fill="none" stroke="#C3CBD8"/>
+<text class="svg-label" x="20" y="226">239 whole slide images,</text><text class="svg-label" x="20" y="242">cut into unlabeled crops</text>
+<path class="arrow" d="M60,114 C120,114 150,90 196,84"/>
+<circle cx="208" cy="39.5" r="8" fill="var(--accent)"/><text x="208" y="43.2" text-anchor="middle" class="svg-stepn">2</text><text class="svg-title" x="222" y="44">Two views</text>
+<g class="anim" style="animation:bob 6s ease-in-out infinite"><image href="assets/img/ddish/view-a.jpg" x="204" y="60" width="62" height="62" transform="rotate(6 235 91)"/></g>
+<g class="anim" style="animation:bob 6s ease-in-out .9s infinite"><image href="assets/img/ddish/view-b.jpg" x="204" y="136" width="62" height="62" transform="rotate(-7 235 167)"/></g>
+<text class="svg-label" x="274" y="95">A</text><text class="svg-label" x="274" y="171">B</text>
+<text class="svg-label" x="200" y="226">crop, flip, rotate,</text><text class="svg-label" x="200" y="242">colour and blur</text>
+<path class="arrow" d="M290,130 L312,130"/>
+<circle cx="326" cy="39.5" r="8" fill="var(--accent)"/><text x="326" y="43.2" text-anchor="middle" class="svg-stepn">3</text><text class="svg-title" x="340" y="44">SimCLR pretraining</text>
+<path d="M322,58 L466,58 L450,88 L338,88 Z" fill="#DCE4EF" stroke="#A9B7CC"/><text class="svg-title" x="394" y="77" text-anchor="middle" style="fill:#2B3F5C;font-size:11.5px">YOLO backbone</text>
+<rect x="322" y="100" width="144" height="100" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-label" x="330" y="116" style="font-size:11px">embedding space</text>
+<circle class="anim" cx="352" cy="156" r="5" fill="var(--accent)" style="--dx:22px;animation:drift 3.4s ease-in-out infinite alternate"/>
+<circle class="anim" cx="424" cy="156" r="5" fill="var(--accent)" style="--dx:-22px;animation:drift 3.4s ease-in-out infinite alternate"/>
+<circle cx="340" cy="130" r="3.2" fill="#C2CAD6"/>
+<circle cx="452" cy="134" r="3.2" fill="#C2CAD6"/>
+<circle cx="446" cy="184" r="3.2" fill="#C2CAD6"/>
+<circle cx="336" cy="186" r="3.2" fill="#C2CAD6"/>
+<circle cx="396" cy="128" r="3.2" fill="#C2CAD6"/>
+<text class="svg-label" x="318" y="226">views of one crop pull</text><text class="svg-label" x="318" y="242">together, others push apart</text>
+<path class="arrow" d="M476,130 L498,130"/>
+<circle cx="510" cy="39.5" r="8" fill="var(--accent)"/><text x="510" y="43.2" text-anchor="middle" class="svg-stepn">4</text><text class="svg-title" x="524" y="44">Fine-tune detector</text>
+<image href="assets/img/ddish/annotation.jpg" x="506" y="58" width="150" height="150"/>
+<g clip-path="url(#wipeClip)"><image href="assets/img/ddish/prediction.jpg" x="506" y="58" width="150" height="150"/></g>
+<rect x="506" y="58" width="150" height="150" fill="none" stroke="#C3CBD8"/>
+<text class="svg-label" x="506" y="226">annotation</text><text class="svg-label" x="656" y="226" text-anchor="end" style="fill:var(--accent)">prediction</text>
+<text class="svg-num" x="506" y="242" style="font-size:11px">F1 86.41, mAP 88.15</text>
+<path d="M581,250 L581,266 L306,266 L306,292" fill="none" stroke="var(--accent)" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arA)"/>
+<text class="svg-label" x="590" y="270" style="font-size:11px;fill:var(--accent)">trained weights</text>
+<text class="svg-lane" x="20" y="284">INFERENCE</text><line x1="96.60000000000001" y1="280" x2="660" y2="280" stroke="var(--rule)"/>
+<circle cx="28" cy="303.5" r="8" fill="var(--accent)"/><text x="28" y="307.2" text-anchor="middle" class="svg-stepn">5</text><text class="svg-title" x="42" y="308">Crop</text>
+<use href="#ddpatch" transform="translate(20,318) scale(0.3906)"/><rect x="20" y="318" width="100" height="100" fill="none" stroke="#C3CBD8"/>
+<text class="svg-label" x="20" y="436">256 px patch</text><text class="svg-label" x="20" y="452">from the slide</text>
+<path class="arrow" d="M122,368 L134,368"/>
+<circle cx="146" cy="303.5" r="8" fill="var(--accent)"/><text x="146" y="307.2" text-anchor="middle" class="svg-stepn">6</text><text class="svg-title" x="160" y="308">Segment</text>
+<use href="#ddpatch" transform="translate(138,318) scale(0.3906)"/>
+<g transform="translate(138,318) scale(0.3906)" fill="rgba(31,78,156,.10)" stroke="#1F4E9C" stroke-width="4.10" stroke-linejoin="round">
+<polygon points="80,40 93,52 110,53 124,44 130,35 133,21 130,9 137,5 145,15 150,16 161,8 163,0 76,0 74,16"/>
+<polygon points="80,65 71,61 63,61 52,66 50,70 58,78 56,83 50,80 48,71 37,69 25,72 23,80 19,83 11,80 0,86 0,91 8,97 12,105 12,109 8,113 0,110 0,125 4,129 6,142 18,171 81,170 92,159 102,153 98,150 105,138 105,110 92,97 85,72"/>
+<polygon points="18,172 23,187 33,192 32,202 38,210 39,219 54,238 69,243 83,241 87,245 88,255 128,255 117,240 105,229 106,221 115,202 119,186 118,168 107,155 99,155 81,171"/>
+<polygon points="155,42 148,47 140,48 134,55 128,55 124,58 122,64 122,87 109,99 106,108 106,137 109,136 118,144 131,144 140,152 150,149 155,143 154,132 161,125 170,124 178,119 185,107 185,68 179,59 169,52 161,50"/>
+<polygon points="215,46 209,55 207,72 214,88 227,88 230,86 232,78 238,72 235,64 237,60 226,50"/>
+<polygon points="166,170 167,187 174,197 173,202 175,205 186,209 198,210 210,202 211,193 206,181 201,181 193,189 183,189 181,186 183,177 186,174 198,171 199,169 196,165 190,164 186,167 172,165"/>
+<polygon points="247,205 237,212 230,225 235,247 231,255 245,255 248,244 251,241 255,241 255,210"/>
+<polygon points="173,255 219,255 220,234 216,230 208,230 200,224 195,224 190,229 191,236 181,240"/>
+</g><rect x="138" y="318" width="100" height="100" fill="none" stroke="#C3CBD8"/>
+<text class="svg-label" x="138" y="436">seg model masks</text><text class="svg-label" x="138" y="452">each nucleus</text>
+<path class="arrow" d="M240,368 L252,368"/>
+<circle cx="264" cy="303.5" r="8" fill="var(--accent)"/><text x="264" y="307.2" text-anchor="middle" class="svg-stepn">7</text><text class="svg-title" x="278" y="308">Detect</text>
+<use href="#ddpatch" transform="translate(256,318) scale(0.3906)"/>
+<g transform="translate(256,318) scale(0.3906)" fill="none" stroke-width="3.33">
+<g stroke="#1F4E9C" stroke-opacity=".35" stroke-width="2.56"><polygon points="80,40 93,52 110,53 124,44 130,35 133,21 130,9 137,5 145,15 150,16 161,8 163,0 76,0 74,16"/><polygon points="80,65 71,61 63,61 52,66 50,70 58,78 56,83 50,80 48,71 37,69 25,72 23,80 19,83 11,80 0,86 0,91 8,97 12,105 12,109 8,113 0,110 0,125 4,129 6,142 18,171 81,170 92,159 102,153 98,150 105,138 105,110 92,97 85,72"/><polygon points="18,172 23,187 33,192 32,202 38,210 39,219 54,238 69,243 83,241 87,245 88,255 128,255 117,240 105,229 106,221 115,202 119,186 118,168 107,155 99,155 81,171"/><polygon points="155,42 148,47 140,48 134,55 128,55 124,58 122,64 122,87 109,99 106,108 106,137 109,136 118,144 131,144 140,152 150,149 155,143 154,132 161,125 170,124 178,119 185,107 185,68 179,59 169,52 161,50"/><polygon points="215,46 209,55 207,72 214,88 227,88 230,86 232,78 238,72 235,64 237,60 226,50"/><polygon points="166,170 167,187 174,197 173,202 175,205 186,209 198,210 210,202 211,193 206,181 201,181 193,189 183,189 181,186 183,177 186,174 198,171 199,169 196,165 190,164 186,167 172,165"/><polygon points="247,205 237,212 230,225 235,247 231,255 245,255 248,244 251,241 255,241 255,210"/><polygon points="173,255 219,255 220,234 216,230 208,230 200,224 195,224 190,229 191,236 181,240"/></g>
+<circle cx="117.0" cy="7.9" r="6.5" stroke="#111"/>
+<circle cx="99.5" cy="15.3" r="6.5" stroke="#111"/>
+<circle cx="153.6" cy="43.7" r="6.5" stroke="#111"/>
+<circle cx="79.3" cy="76.3" r="6.5" stroke="#111"/>
+<circle cx="26.5" cy="83.0" r="6.5" stroke="#111"/>
+<circle cx="64.1" cy="87.4" r="6.5" stroke="#111"/>
+<circle cx="74.5" cy="92.8" r="6.5" stroke="#111"/>
+<circle cx="62.6" cy="96.4" r="6.5" stroke="#111"/>
+<circle cx="145.0" cy="98.3" r="6.5" stroke="#111"/>
+<circle cx="18.6" cy="104.9" r="6.5" stroke="#111"/>
+<circle cx="41.8" cy="104.0" r="6.5" stroke="#111"/>
+<circle cx="52.2" cy="105.5" r="6.5" stroke="#111"/>
+<circle cx="74.5" cy="108.5" r="6.5" stroke="#111"/>
+<circle cx="12.9" cy="109.7" r="6.5" stroke="#111"/>
+<circle cx="57.9" cy="109.6" r="6.5" stroke="#111"/>
+<circle cx="109.6" cy="109.8" r="6.5" stroke="#111"/>
+<circle cx="66.2" cy="112.2" r="6.5" stroke="#111"/>
+<circle cx="57.4" cy="117.5" r="6.5" stroke="#111"/>
+<circle cx="13.7" cy="122.9" r="6.5" stroke="#111"/>
+<circle cx="24.6" cy="129.8" r="6.5" stroke="#111"/>
+<circle cx="69.0" cy="166.5" r="6.5" stroke="#111"/>
+<circle cx="48.3" cy="167.5" r="6.5" stroke="#111"/>
+<circle cx="48.0" cy="174.0" r="6.5" stroke="#111"/>
+<circle cx="54.5" cy="181.5" r="6.5" stroke="#111"/>
+<circle cx="199.2" cy="183.6" r="6.5" stroke="#111"/>
+<circle cx="187.5" cy="189.6" r="6.5" stroke="#111"/>
+<circle cx="68.2" cy="193.0" r="6.5" stroke="#111"/>
+<circle cx="46.0" cy="206.7" r="6.5" stroke="#111"/>
+<circle cx="39.0" cy="212.8" r="6.5" stroke="#111"/>
+<circle cx="75.9" cy="227.3" r="6.5" stroke="#111"/>
+<circle cx="100.0" cy="232.8" r="6.5" stroke="#111"/>
+<circle cx="210.4" cy="236.1" r="6.5" stroke="#111"/>
+<circle cx="199.7" cy="240.1" r="6.5" stroke="#111"/>
+<circle cx="196.8" cy="252.5" r="6.5" stroke="#111"/>
+<circle cx="114.0" cy="15.0" r="6.5" stroke="#D7263D"/>
+<circle cx="99.7" cy="18.0" r="6.5" stroke="#D7263D"/>
+<circle cx="63.5" cy="101.9" r="6.5" stroke="#D7263D"/>
+<circle cx="57.3" cy="114.4" r="6.5" stroke="#D7263D"/>
+<circle cx="19.6" cy="129.5" r="6.5" stroke="#D7263D"/>
+<circle cx="62.6" cy="158.2" r="6.5" stroke="#D7263D"/>
+<circle cx="52.8" cy="170.5" r="6.5" stroke="#D7263D"/>
+<circle cx="65.3" cy="181.0" r="6.5" stroke="#D7263D"/>
+<circle cx="50.0" cy="182.1" r="6.5" stroke="#D7263D"/>
+</g><rect x="256" y="318" width="100" height="100" fill="none" stroke="#C3CBD8"/>
+<circle cx="261" cy="432" r="4.5" fill="none" stroke="#111" stroke-width="1.6"/><text class="svg-label" x="271" y="436">HER2, black</text>
+<circle cx="261" cy="448" r="4.5" fill="none" stroke="#D7263D" stroke-width="1.6"/><text class="svg-label" x="271" y="452">CEP17, red</text>
+<path class="arrow" d="M358,368 L370,368"/>
+<circle cx="382" cy="303.5" r="8" fill="var(--accent)"/><text x="382" y="307.2" text-anchor="middle" class="svg-stepn">8</text><text class="svg-title" x="396" y="308">Review</text>
+<rect x="374" y="318" width="152" height="102" rx="4" fill="#fff" stroke="#C9D0DA"/><rect x="374" y="318" width="152" height="15" rx="4" fill="#EEF1F5"/><rect x="374" y="328" width="152" height="5" fill="#EEF1F5"/>
+<circle cx="382" cy="325.5" r="2.2" fill="#C2CAD6"/>
+<circle cx="389" cy="325.5" r="2.2" fill="#C2CAD6"/>
+<circle cx="396" cy="325.5" r="2.2" fill="#C2CAD6"/>
+<text class="svg-num" x="408" y="329" style="font-size:8.5px;fill:var(--ink-faint)">nucleus viewer</text>
+<image href="assets/img/ddish/nucleus-1.jpg" x="382" y="340" width="40" height="40"/>
+<rect class="anim" x="380" y="338" width="44" height="44" rx="2" fill="none" stroke="var(--accent)" stroke-width="2" style="animation:fadeCycle 6s linear 0s infinite"/>
+<circle cx="387" cy="394" r="3" fill="#111"/><text class="svg-num" x="393" y="397.5" style="font-size:10px">17</text>
+<circle cx="387" cy="409" r="3" fill="#D7263D"/><text class="svg-num" x="393" y="412.5" style="font-size:10px">5</text>
+<image href="assets/img/ddish/nucleus-2.jpg" x="430" y="340" width="40" height="40"/>
+<rect class="anim" x="428" y="338" width="44" height="44" rx="2" fill="none" stroke="var(--accent)" stroke-width="2" style="animation:fadeCycle 6s linear 2s infinite"/>
+<circle cx="435" cy="394" r="3" fill="#111"/><text class="svg-num" x="441" y="397.5" style="font-size:10px">7</text>
+<circle cx="435" cy="409" r="3" fill="#D7263D"/><text class="svg-num" x="441" y="412.5" style="font-size:10px">2</text>
+<image href="assets/img/ddish/nucleus-3.jpg" x="478" y="340" width="40" height="40"/>
+<rect class="anim" x="476" y="338" width="44" height="44" rx="2" fill="none" stroke="var(--accent)" stroke-width="2" style="animation:fadeCycle 6s linear 4s infinite"/>
+<circle cx="483" cy="394" r="3" fill="#111"/><text class="svg-num" x="489" y="397.5" style="font-size:10px">2</text>
+<circle cx="483" cy="409" r="3" fill="#D7263D"/><text class="svg-num" x="489" y="412.5" style="font-size:10px">2</text>
+<text class="svg-label" x="374" y="436">counts for every nucleus,</text><text class="svg-label" x="374" y="452">open to correction</text>
+<path class="arrow" d="M528,368 L536,368"/>
+<circle cx="548" cy="303.5" r="8" fill="var(--accent)"/><text x="548" y="307.2" text-anchor="middle" class="svg-stepn">9</text><text class="svg-title" x="562" y="308">Decide</text>
+<rect x="540" y="318" width="130" height="102" rx="4" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-label" x="550" y="336" style="font-size:11px">HER2 / CEP17</text>
+<text class="svg-num" x="550" y="362" style="font-size:22px;font-weight:500">2.9</text>
+<text class="svg-label" x="596" y="362" style="font-size:11px">≥ 2.0</text>
+<text class="svg-label" x="550" y="380" style="font-size:11px">mean HER2 8.7 ≥ 4</text>
+<rect class="anim pop" x="550" y="390" width="110" height="20" rx="10" fill="#E3F1E9" style="animation:popIn 6s ease-out 1s infinite"/><text class="svg-title" x="605" y="404" text-anchor="middle" style="font-size:11px;fill:var(--green)">HER2 amplified</text>
+<text class="svg-label" x="540" y="436">candidate for</text><text class="svg-label" x="540" y="452">anti-HER2 therapy</text>
+</svg>

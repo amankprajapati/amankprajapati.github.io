@@ -1,0 +1,26 @@
+<article class="entry" id="grain">
+  <span class="tag poster">Poster</span>
+  <h3>Heat and moisture migration modeling in long-term paddy storage using in-situ sensors</h3>
+  <p class="meta"><span class="venue">Poster, ICFoST 2025, NIFTEM Thanjavur</span> &nbsp;·&nbsp; Agro-Bio Technology Lab, IIT Kharagpur, with the Food Corporation of India</p>
+  <figure class="fig" data-fig>
+    {% include "figures/grain.svg" %}
+    <script type="application/json" id="grain-data">{{ grain | dump | safe }}</script>
+    <figcaption>The fields step through 12 to 18 June in sync with the daily budget. They are interpolated in the browser from approximate per sensor values read off the project's daily maps, so shapes and trends are faithful but individual numbers are approximate. The budgets themselves come from integrating the sensor readings over a tetrahedral mesh of the stack.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">6.4% → 4.5%</span><span class="k">estimated paddy wastage</span></li>
+    <li><span class="v">3 depots</span><span class="k">Miryalaguda, Nalgonda, Bargarh</span></li>
+    <li><span class="v">11 sensors</span><span class="k">per bin, 6 hour interval</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>Food Corporation of India depots hold paddy in stacks of roughly 2,772 gunny bags. Spoilage does not begin in the average, it begins in a pocket: a warm moist region forms, warm air carries moisture outward, moisture settles in cooler grain nearby, and the cycle reinforces itself. A bulk average hides all of that until the loss is visible.</p>
+      <p>Eleven temperature and humidity sensors per bin report every six hours. I tessellated the sensor positions into tetrahedra with a Delaunay triangulation, converted temperature and relative humidity into grain moisture through an equilibrium isotherm, and integrated across the volume to produce a daily heat budget in megajoules and a daily water budget in kilograms, alongside interpolated field maps.</p>
+      <p>Across June 2025, the Nalgonda bin lost heat on every day of the record. Miryalaguda showed a single moisture gain of 0.359 kg on 13 June that reversed the next day, with a near zero heat change on the same day, which reads as internal redistribution or a short condensation event rather than active spoilage. The field maps show a warm region fixed near sensor S2 and a cool region near S4 that barely moved all week. Pairing those maps with zone specific drying and turning, rather than drying whole stacks on a schedule, cut estimated paddy wastage across three depots from about 6.4% to about 4.5%.</p>
+      <p>The method is deliberately honest about its own limits. A uniform half degree sensor error integrates to more energy than the daily signal itself, so the reported numbers are read as trends and signs rather than as precise quantities.</p>
+    </div>
+  </details>
+</article>

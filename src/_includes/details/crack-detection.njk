@@ -1,0 +1,6 @@
+<p class="sub-band" style="margin-top:4px">Real time crack detection on railway track imagery</p>
+<figure class="fig" data-fig>
+{% include "figures/crack-detection.svg" %}
+<figcaption>Detection runs on the device next to the camera, so only the findings travel over the network rather than the video.</figcaption>
+</figure>
+<p>YOLOv5 and RT-DETR fine tuned on US railway track imagery for crack detection and classification, reaching 86% precision. Post processing was parallelized with OpenMPI for a 68% improvement in compute time, which is what made real time operation on edge hardware feasible. I also set up a WireGuard server for stable communication and file exchange across more than 40 remote devices internationally.</p>

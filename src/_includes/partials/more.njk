@@ -1,0 +1,7 @@
+{#- Expandable "Read the full description" block. Set `detailsFile` before including. -#}
+<details class="more">
+  <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+  <div class="more-body">
+{% include "details/" + detailsFile + ".njk" %}
+  </div>
+</details>

@@ -1,0 +1,27 @@
+<svg viewBox="0 0 680 182" role="img" aria-label="Fifty RTSP streams are decoded on the GPU, batched across streams, run through detection and tracking, and selected frames are escalated to a Qwen3-VL model on vLLM, with results in under a second.">
+<circle cx="28" cy="21.5" r="8" fill="var(--accent)"/><text x="28" y="25.2" text-anchor="middle" class="svg-stepn">1</text>
+<rect x="20" y="40" width="96" height="64" rx="3" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-title" x="30" y="66" style="font-size:12px">RTSP ingest</text><text class="svg-label" x="30" y="84" style="font-size:10.5px">50 live streams</text>
+<path class="arrow" d="M118,72 L131,72"/>
+<circle cx="141" cy="21.5" r="8" fill="var(--accent)"/><text x="141" y="25.2" text-anchor="middle" class="svg-stepn">2</text>
+<rect x="133" y="40" width="96" height="64" rx="3" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-title" x="143" y="66" style="font-size:12px">GPU decode</text><text class="svg-label" x="143" y="84" style="font-size:10.5px">NVDEC</text>
+<path class="arrow" d="M231,72 L244,72"/>
+<circle cx="254" cy="21.5" r="8" fill="var(--accent)"/><text x="254" y="25.2" text-anchor="middle" class="svg-stepn">3</text>
+<rect x="246" y="40" width="96" height="64" rx="3" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-title" x="256" y="66" style="font-size:12px">Batch</text><text class="svg-label" x="256" y="84" style="font-size:10.5px">across streams</text>
+<path class="arrow" d="M344,72 L357,72"/>
+<circle cx="367" cy="21.5" r="8" fill="var(--accent)"/><text x="367" y="25.2" text-anchor="middle" class="svg-stepn">4</text>
+<rect x="359" y="40" width="96" height="64" rx="3" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-title" x="369" y="66" style="font-size:12px">Detect, track</text><text class="svg-label" x="369" y="84" style="font-size:10.5px">fixed classes</text>
+<path class="arrow" d="M457,72 L470,72"/>
+<circle cx="480" cy="21.5" r="8" fill="var(--accent)"/><text x="480" y="25.2" text-anchor="middle" class="svg-stepn">5</text>
+<rect x="472" y="40" width="96" height="64" rx="3" fill="#EDE9F8" stroke="#8B7FC7"/>
+<text class="svg-title" x="482" y="66" style="font-size:12px">Escalate</text><text class="svg-label" x="482" y="84" style="font-size:10.5px">Qwen3-VL, vLLM</text>
+<path class="arrow" d="M570,72 L583,72"/>
+<circle cx="593" cy="21.5" r="8" fill="var(--accent)"/><text x="593" y="25.2" text-anchor="middle" class="svg-stepn">6</text>
+<rect x="585" y="40" width="96" height="64" rx="3" fill="#fff" stroke="var(--rule)"/>
+<text class="svg-title" x="595" y="66" style="font-size:12px">Result</text><text class="svg-label" x="595" y="84" style="font-size:10.5px">under 1 s</text>
+<rect x="20" y="122" width="640" height="44" rx="3" fill="#EEF2F7"/>
+<text class="svg-label" x="32" y="149" style="font-size:11.5px">Kafka carries events, Ray scales workers, everything ships in containers on Kubernetes, on a single RTX 5090</text>
+</svg>

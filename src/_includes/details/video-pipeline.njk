@@ -1,0 +1,13 @@
+<p class="sub-band" style="margin-top:4px">Multi-stream video analytics with vision language escalation</p>
+<figure class="fig" data-fig>
+{% include "figures/video-pipeline.svg" %}
+<figcaption>Detection handles the fixed class list. Anything that needs an open ended answer is escalated to the vision language model instead of adding another class.</figcaption>
+</figure>
+<p>Client deployments need many camera streams analyzed at once, on hardware the client will actually pay for. The pipeline ingests live RTSP, decodes on the GPU, batches frames across streams so the detector is never waiting on a single camera, and escalates selected frames to a vision language model for the questions a fixed class list cannot answer.</p>
+        <p>Qwen3-VL variants run behind vLLM engines at FP8 8B and FP16 4B, with prompt tuning per deployment. Kafka moves events, Ray handles distributed processing and automatic load handling, and everything ships in containers on Kubernetes. The current build processes 50 parallel live streams with results delivered in under one second on a single RTX 5090.</p>
+        <p>Client specifics stay off this page. What generalizes is the shape of the problem: throughput comes from batching across sources rather than from optimizing any single model, and open ended understanding is worth paying for only on the frames that need it.</p>
+<ul class="metrics">
+      <li><span class="v">50 streams</span><span class="k">parallel, live</span></li>
+      <li><span class="v">&lt;1 s</span><span class="k">end to end result latency</span></li>
+      <li><span class="v">1 GPU</span><span class="k">single RTX 5090</span></li>
+    </ul>

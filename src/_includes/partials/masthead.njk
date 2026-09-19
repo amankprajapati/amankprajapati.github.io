@@ -1,0 +1,26 @@
+<header class="masthead">
+  <div class="wrap mast-grid">
+    <div>
+      <h1>{{ site.name }}</h1>
+      <p class="role">{{ site.role }}</p>
+      <p class="statement">{{ site.statement }}</p>
+      <p class="sub">{{ site.sub }}</p>
+      <section class="interests" aria-labelledby="int-h">
+        <h2 id="int-h">Research interests</h2>
+        <ul>
+          {%- for item in site.interests %}
+          <li><b>{{ item.title }}</b>{{ item.text }}</li>
+          {%- endfor %}
+        </ul>
+      </section>
+    </div>
+    <div>
+      <div class="portrait" id="portrait"><img src="assets/img/portrait.jpg" alt="{{ site.name }}"></div>
+      <div class="contact">
+        {%- for link in site.links %}
+        <a href="{{ link.href }}"{% if link.external %} target="_blank" rel="noopener"{% endif %}>{% include "icons/" + link.icon + ".svg" %}{{ link.label }}</a>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</header>

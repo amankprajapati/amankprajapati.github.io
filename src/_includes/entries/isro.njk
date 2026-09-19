@@ -1,0 +1,23 @@
+<article class="entry" id="isro">
+  <span class="tag">Research internship</span>
+  <h3>Physics informed autoencoder for satellite gyroscope anomaly detection</h3>
+  <p class="meta"><span class="venue">U R Rao Satellite Centre, ISRO</span> &nbsp;·&nbsp; Research intern, 2025</p>
+  <figure class="fig" data-fig>
+    {% include "figures/isro.svg" %}
+    <figcaption>The physical prior explains away motion that is merely unusual, so the residual only rises for behaviour the rigid body dynamics cannot produce.</figcaption>
+  </figure>
+
+  <ul class="metrics">
+    <li><span class="v">0.76 → 0.84</span><span class="k">anomaly flagging F1</span></li>
+    <li><span class="v">21%</span><span class="k">fewer false alarms per day</span></li>
+    <li><span class="v">3 to 4 min</span><span class="k">earlier alerts</span></li>
+  </ul>
+
+  <details class="more">
+    <summary><span class="chev"></span><span class="label-closed">Read the full description</span><span class="label-open">Hide description</span></summary>
+    <div class="more-body">
+      <p>A dynamically tuned gyroscope produces telemetry that is noisy by nature, and limit based checks either fire constantly or miss slow drift. I built an autoencoder that embeds DTG rigid body dynamics directly in the loss, so a reconstruction is penalized for being physically impossible as well as numerically wrong. What remains in the residual is behaviour the physics cannot account for, which is a much better definition of an anomaly than a threshold on raw amplitude.</p>
+      <p>Benchmarked against LSTM, transformer, isolation forest and one class SVM baselines, it lifted anomaly flagging F1 from about 0.76 to 0.84, at 88% precision and 80% recall. Combined with cyclic redundancy checks into a hybrid pipeline, it cut false alarms from about 14 per day to about 11 and raised real alerts 3 to 4 minutes earlier than the rule based checks, which is the margin that matters for an operator on console.</p>
+    </div>
+  </details>
+</article>
