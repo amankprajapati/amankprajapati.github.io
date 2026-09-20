@@ -36,6 +36,13 @@
   display:block;
 }
 
+.vlabel strong {
+  display:block;
+  font-size:14.5px;
+  font-weight:700;
+  color:var(--ink);
+}
+
 .vlabel span {
   display:block;
   color:var(--ink-faint);
@@ -43,7 +50,8 @@
   margin-top:2px;
 }
 
-.vcard iframe {
+.vcard iframe,
+.vcard video {
   display:block;
   width:100%;
   aspect-ratio:16/9;
