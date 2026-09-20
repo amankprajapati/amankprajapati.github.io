@@ -18,6 +18,20 @@
 .xp .where {
   font-weight:600;
   font-size:18px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.org-logo {
+  width:32px;
+  height:32px;
+  object-fit:contain;
+  border-radius:6px;
+  border:1px solid var(--rule);
+  background:var(--paper);
+  padding:3px;
+  flex-shrink:0;
 }
 
 .xp .what {

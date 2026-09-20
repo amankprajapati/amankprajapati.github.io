@@ -20,6 +20,7 @@
         {
           "when": "May – Jul 2024",
           "where": "L&T Technology Services",
+          "logo": "/assets/img/logos/lt.svg",
           "role": "ML Engineer intern, Bangalore",
           "summary": "YOLOv5 and RT-DETR fine tuned for real time crack detection on railway track imagery at 86% precision, with OpenMPI parallel post processing for a 68% improvement in compute time, plus a WireGuard server linking more than 40 remote devices.",
           "details": "crack-detection"
@@ -38,6 +39,7 @@
         {
           "when": "Aug 2025 – Feb 2026",
           "where": "Medical Intelligence, Neuroimaging and Data Lab, IIT Ropar",
+          "logo": "/assets/img/logos/iit-ropar.png",
           "role": "Research intern, Rupnagar",
           "summary": "Built the end to end pipeline for quantifying HER2 and CEP17 gene signals in D-DISH pathology images, combining self supervised contrastive pretraining with a YOLO detector. Assembled and annotated the dataset behind it. Manuscript under review at MICCAI 2026.",
           "link": {
@@ -48,6 +50,7 @@
         {
           "when": "May – Jun 2025",
           "where": "U R Rao Satellite Centre, ISRO",
+          "logo": "/assets/img/logos/isro.svg",
           "role": "Research intern, Bangalore",
           "summary": "Physics informed autoencoder for denoising gyroscope telemetry and flagging non physical anomalies, integrated with cyclic redundancy checks into a hybrid detection pipeline that raised alerts minutes earlier than the existing rule based checks.",
           "link": {
@@ -58,6 +61,7 @@
         {
           "when": "Mar – Aug 2025",
           "where": "Agro-Bio Technology Lab, IIT Kharagpur",
+          "logo": "/assets/img/logos/iit-kgp.png",
           "role": "Research intern, remote, with the Food Corporation of India",
           "summary": "Piloted post-harvest spoilage reduction across three FCI depots. Cleaned depot sensor data, automated daily heat and humidity maps with hotspot alerts, and modelled heat and moisture migration to predict shelf life and flag high risk piles.",
           "link": {
