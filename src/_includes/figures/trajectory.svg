@@ -1,35 +1,72 @@
-<svg viewBox="0 0 680 220" role="img" aria-label="Front camera video, IMU and GPS are encoded, fused by a transformer, and decoded into a five second forecast of path, speed and turn angle.">
-<circle cx="28" cy="21.5" r="8" fill="var(--accent)"/><text x="28" y="25.2" text-anchor="middle" class="svg-stepn">1</text><text class="svg-title" x="42" y="26">Inputs</text>
-<rect x="20" y="38" width="150" height="80" rx="3" fill="#E4E8EE"/><path d="M60,118 L88,56 L102,56 L130,118 Z" fill="#CDD3DC"/>
-<rect class="anim" x="84" y="84" width="16" height="11" rx="1.5" fill="#8793A3" style="--dx:-10px;animation:drift 4s ease-in-out infinite alternate"/><rect x="100" y="66" width="10" height="7" rx="1" fill="#9AA5B4"/><circle cx="118" cy="98" r="5" fill="#9AA5B4"/>
-<text class="svg-label" x="28" y="54" style="font-size:11px">front camera</text>
-<text class="svg-label" x="20" y="136" style="font-size:11px">IMU</text><polyline points="20,146.0 22,150.4 24,153.3 26,154.1 28,153.0 30,151.0 32,149.4 34,148.7 36,148.8 38,148.8 40,147.6 42,145.0 44,141.3 46,137.9 48,136.1 50,136.7 52,139.5 54,143.4 56,146.9 58,149.0 60,149.6 62,149.3 64,149.3 66,150.1 68,151.8 70,153.3 72,153.6 74,151.7 76,148.0 78,143.4 80,139.5 82,137.6 84,137.9 86,139.7 88,142.0 90,143.4 92,143.9 94,143.8 96,144.2 98,146.0 100,149.1 102,152.6 104,155.3 106,155.9 108,154.0 110,150.4 112,146.4 114,143.3 116,141.9 118,141.9 120,142.3 122,142.3 124,141.2 126,139.7 128,138.8 130,139.6 132,142.4 134,146.6 136,151.0 138,154.1 140,154.9 142,153.6 144,151.2 146,148.9 148,147.7 150,147.4 152,147.4 154,146.5 156,144.3 158,141.0 160,137.9 162,136.2 164,136.9 166,139.8 168,144.0 170,147.8" fill="none" stroke="var(--violet)" stroke-width="1.3" transform="translate(0,4)"/>
-<text class="svg-label" x="20" y="178" style="font-size:11px">GPS</text>
-<circle cx="24" cy="196.0" r="2.4" fill="var(--green)"/>
-<circle cx="39" cy="194.7" r="2.4" fill="var(--green)"/>
-<circle cx="54" cy="193.5" r="2.4" fill="var(--green)"/>
-<circle cx="69" cy="192.6" r="2.4" fill="var(--green)"/>
-<circle cx="84" cy="192.1" r="2.4" fill="var(--green)"/>
-<circle cx="99" cy="192.0" r="2.4" fill="var(--green)"/>
-<circle cx="114" cy="192.4" r="2.4" fill="var(--green)"/>
-<circle cx="129" cy="193.1" r="2.4" fill="var(--green)"/>
-<circle cx="144" cy="194.2" r="2.4" fill="var(--green)"/>
-<circle cx="159" cy="195.4" r="2.4" fill="var(--green)"/>
-<path class="arrow" d="M176,78 L204,78"/><path class="arrow" d="M176,160 L204,160"/>
-<circle cx="216" cy="21.5" r="8" fill="var(--accent)"/><text x="216" y="25.2" text-anchor="middle" class="svg-stepn">2</text><text class="svg-title" x="230" y="26">Encode</text>
-<rect x="208" y="56" width="110" height="44" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-title" x="218" y="75" style="font-size:12px">3D CNN</text><text class="svg-label" x="218" y="91" style="font-size:11px">short clips</text>
-<rect x="208" y="138" width="110" height="44" rx="3" fill="#fff" stroke="var(--rule)"/><text class="svg-title" x="218" y="157" style="font-size:12px">sensor tokens</text><text class="svg-label" x="218" y="173" style="font-size:11px">normalised streams</text>
-<path class="arrow" d="M322,78 C340,78 336,110 352,112"/><path class="arrow" d="M322,160 C340,160 336,130 352,128"/>
-<circle cx="364" cy="21.5" r="8" fill="var(--accent)"/><text x="364" y="25.2" text-anchor="middle" class="svg-stepn">3</text><text class="svg-title" x="378" y="26">Fuse</text>
-<rect x="358" y="84" width="110" height="72" rx="3" fill="#EDE9F8" stroke="#8B7FC7"/><text class="svg-title" x="370" y="114" style="font-size:12px;fill:#3E3585">transformer</text><text class="svg-label" x="370" y="132" style="font-size:11px">temporal fusion</text>
-<path class="arrow" d="M472,120 L496,120"/>
-<circle cx="508" cy="21.5" r="8" fill="var(--accent)"/><text x="508" y="25.2" text-anchor="middle" class="svg-stepn">4</text><text class="svg-title" x="522" y="26">Forecast, 5 s</text>
-<rect x="500" y="38" width="160" height="164" rx="3" fill="#E4E8EE"/><path d="M526,202 L570,70 L590,70 L634,202 Z" fill="#CDD3DC"/>
-<path class="anim" d="M580,200 C580,160 584,120 606,84" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="140" style="--len:140;animation:draw 3s ease-out infinite"/>
-<circle cx="580.6" cy="176.03200000000004" r="2.6" fill="#fff" stroke="var(--accent)"/>
-<circle cx="582.8" cy="152.256" r="2.6" fill="#fff" stroke="var(--accent)"/>
-<circle cx="587.3" cy="128.864" r="2.6" fill="#fff" stroke="var(--accent)"/>
-<circle cx="594.8" cy="106.048" r="2.6" fill="#fff" stroke="var(--accent)"/>
-<circle cx="606.0" cy="84.0" r="2.6" fill="#fff" stroke="var(--accent)"/>
-<text class="svg-label" x="508" y="56" style="font-size:11px">path, speed, turn angle</text>
+<svg viewBox="0 0 680 480" role="img" id="traj-fig" aria-label="Camera, IMU and GPS inputs are encoded by a 3D CNN and sensor tokens, fused by a transformer into a five second forecast of path, speed and turn angle. Below, the forecast drives the vehicle through traffic without lane markings, with a speedometer and steering wheel showing the control output.">
+  <defs>
+    <clipPath id="traj-road-clip"><rect x="170" y="150" width="260" height="320" rx="6"/></clipPath>
+  </defs>
+  <rect x="20" y="20" width="182" height="104" rx="4" fill="#EEF1F5" stroke="#C9D0DA"/>
+  <text class="svg-label" x="30" y="38" style="font-size:11px">camera</text>
+  <rect x="30" y="44" width="72" height="54" rx="3" fill="#E2E6EB"/>
+  <path d="M44 98 L62 52 L70 52 L88 98 Z" fill="#CDD3DC"/>
+  <g id="traj-cam"></g>
+  <text class="svg-label" x="112" y="38" style="font-size:11px">IMU</text>
+  <polyline id="traj-imu" fill="none" stroke="#574CA6" stroke-width="1.3"/>
+  <text class="svg-label" x="112" y="84" style="font-size:11px">GPS</text>
+  <g id="traj-gps"></g>
+  <path class="arrow" d="M204,72 L222,72"/>
+  <rect x="226" y="20" width="116" height="44" rx="4" fill="#EDE9F8" stroke="#8B7FC7"/>
+  <text class="svg-title" x="284" y="46" text-anchor="middle" style="fill:#3E3585">3D CNN</text>
+  <rect x="226" y="80" width="116" height="44" rx="4" fill="#EDE9F8" stroke="#8B7FC7"/>
+  <text class="svg-title" x="284" y="106" text-anchor="middle" style="fill:#3E3585">sensor tokens</text>
+  <path class="arrow" d="M344,42 C356,42 354,66 364,68"/>
+  <path class="arrow" d="M344,102 C356,102 354,78 364,76"/>
+  <rect x="368" y="46" width="112" height="52" rx="4" fill="#EDE9F8" stroke="#8B7FC7"/>
+  <text class="svg-title" x="424" y="68" text-anchor="middle" style="fill:#3E3585">Transformer</text>
+  <text class="svg-label" x="424" y="85" text-anchor="middle" style="font-size:11px">temporal fusion</text>
+  <path class="arrow" d="M482,72 L500,72"/>
+  <rect x="504" y="20" width="156" height="104" rx="4" fill="#E8F3EC" stroke="#2C7A52"/>
+  <text class="svg-title" x="516" y="40" style="fill:#1F5A3C">Forecast, 5 s</text>
+  <text class="svg-label" x="516" y="62" style="font-size:11px">path</text>
+  <text class="svg-label" x="516" y="84" style="font-size:11px">speed</text>
+  <text class="svg-label" x="516" y="106" style="font-size:11px">turn angle</text>
+  <text class="svg-label" id="traj-o-path" x="580" y="62" style="font-size:11px;fill:#15181D">keep course</text>
+  <text class="svg-num" id="traj-o-speed" x="580" y="84">38 km/h</text>
+  <text class="svg-num" id="traj-o-angle" x="580" y="106">0°</text>
+  <g id="traj-pulses"></g>
+  <path d="M582,126 L582,140 L545,140 L545,156" fill="none" stroke="#1F4E9C" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arA)"/>
+  <rect x="170" y="150" width="260" height="320" rx="6" fill="#E4E8EE"/>
+  <line x1="170" y1="150" x2="170" y2="470" stroke="#98A1AD" stroke-width="1.5"/>
+  <line x1="430" y1="150" x2="430" y2="470" stroke="#98A1AD" stroke-width="1.5"/>
+  <g clip-path="url(#traj-road-clip)">
+    <path id="traj-band" fill="#1F4E9C" fill-opacity=".13"/>
+    <path id="traj-path" fill="none" stroke="#1F4E9C" stroke-width="2.5" stroke-linecap="round"/>
+    <g id="traj-dots"></g>
+    <g id="traj-traffic"></g>
+    <g id="traj-ego">
+      <rect x="-12" y="-21" width="24" height="42" rx="5" fill="#1F4E9C"/>
+      <rect x="-8" y="-15" width="16" height="10" rx="2" fill="#E9F0FA"/>
+    </g>
+  </g>
+  <text class="svg-label" x="20" y="172" style="font-size:11px">forecast dots mark</text>
+  <text class="svg-label" x="20" y="188" style="font-size:11px">t + 1 … 5 s</text>
+  <text class="svg-label" x="20" y="216" style="font-size:11px">shaded band grows</text>
+  <text class="svg-label" x="20" y="232" style="font-size:11px">with the horizon</text>
+  <text class="svg-label" x="20" y="460" style="font-size:11px">values illustrative</text>
+  <text class="svg-title" x="450" y="172">Vehicle control</text>
+  <path d="M478.3,279.7 A42,42 0 1 1 537.7,279.7" fill="none" stroke="#E2E6EB" stroke-width="6" stroke-linecap="round"/>
+  <path id="traj-speed-arc" fill="none" stroke="#2C7A52" stroke-width="6" stroke-linecap="round"/>
+  <line id="traj-needle" x1="508" y1="250" x2="508" y2="216" stroke="#5F6773" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="508" cy="250" r="4" fill="#5F6773"/>
+  <text class="svg-num" id="traj-speed" x="508" y="304" text-anchor="middle">38 km/h</text>
+  <text class="svg-label" x="508" y="320" text-anchor="middle" style="font-size:11px">speed</text>
+  <g id="traj-wheel" transform="translate(612,250)">
+    <circle r="30" fill="none" stroke="#5F6773" stroke-width="5"/>
+    <circle r="6" fill="#5F6773"/>
+    <line x1="-28" y1="0" x2="-6" y2="0" stroke="#5F6773" stroke-width="4"/>
+    <line x1="6" y1="0" x2="28" y2="0" stroke="#5F6773" stroke-width="4"/>
+    <line x1="0" y1="6" x2="0" y2="28" stroke="#5F6773" stroke-width="4"/>
+    <circle cx="0" cy="-30" r="3" fill="#B4342C"/>
+  </g>
+  <text class="svg-num" id="traj-angle" x="612" y="304" text-anchor="middle">0°</text>
+  <text class="svg-label" x="612" y="320" text-anchor="middle" style="font-size:11px">steering</text>
+  <text class="svg-label" x="450" y="354" style="font-size:11px">manoeuvre</text>
+  <text class="svg-title" id="traj-man" x="450" y="372">keep course</text>
 </svg>

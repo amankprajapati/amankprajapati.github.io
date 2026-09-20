@@ -4,7 +4,7 @@
   <p class="meta">Independent project &nbsp;·&nbsp; multimodal fusion of video, IMU and GPS</p>
   <figure class="fig" data-fig>
     {% include "figures/trajectory.svg" %}
-    <figcaption>Short video clips carry the scene, the sensor stream carries what the vehicle is actually doing, and the fusion has to agree with both.</figcaption>
+    <figcaption>Camera clips, IMU and GPS are encoded, fused by a transformer and decoded into a five second forecast that sets speed and steering. The traffic scene, speeds and angles illustrate the behaviour; they are not recorded model output.</figcaption>
   </figure>
 
   <p>Forecasts where the vehicle will be over the next five seconds, its path, speed and turn angle, by fusing front camera video with IMU and GPS. Built for Indian traffic, where lane markings are unreliable and the vehicles ahead are the better guide.</p>
