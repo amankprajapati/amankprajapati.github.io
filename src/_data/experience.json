@@ -6,6 +6,7 @@
         {
           "when": "Jan 2026 – present",
           "where": "Big Vision LLC",
+          "logo": "/assets/img/logos/big-vision.png",
           "role": "AI and Computer Vision Engineer, Bangalore. Intern from January to May 2026",
           "summary": "End to end computer vision pipelines for client deployments, containerized with Docker and Kubernetes and distributed with Ray. Accelerated vision language model inference with vLLM, integrated Kafka for real time streaming, and tuned Qwen3-VL variants. Current build handles 50 parallel live streams under one second on a single RTX 5090.",
           "details": "video-pipeline"
