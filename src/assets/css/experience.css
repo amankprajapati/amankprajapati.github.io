@@ -8,6 +8,12 @@
   border-bottom:1px solid var(--rule);
 }
 
+.when-col {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
 .xp .when {
   font-family:var(--sans);
   font-size:13.5px;
@@ -18,19 +24,14 @@
 .xp .where {
   font-weight:600;
   font-size:18px;
-  display:flex;
-  align-items:center;
-  gap:10px;
 }
 
 .org-logo {
-  width:32px;
-  height:32px;
-  object-fit:contain;
-  border-radius:6px;
-  border:1px solid var(--rule);
-  background:var(--paper);
-  padding:3px;
+  width:64px;
+  height:64px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 0 0 1px var(--rule);
   flex-shrink:0;
 }
 

@@ -20,7 +20,7 @@
         {
           "when": "May – Jul 2024",
           "where": "L&T Technology Services",
-          "logo": "/assets/img/logos/lt.svg",
+          "logo": "/assets/img/logos/lt.png",
           "role": "ML Engineer intern, Bangalore",
           "summary": "YOLOv5 and RT-DETR fine tuned for real time crack detection on railway track imagery at 86% precision, with OpenMPI parallel post processing for a 68% improvement in compute time, plus a WireGuard server linking more than 40 remote devices.",
           "details": "crack-detection"
@@ -28,6 +28,7 @@
         {
           "when": "Apr – Aug 2024",
           "where": "Humors Tech",
+          "logo": "/assets/img/logos/humors-tech.png",
           "role": "Data Scientist intern, remote, biotech startup",
           "summary": "RNN and LSTM models in PyTorch classifying lung health as poor, normal or good from breath sensor data, reaching a 92% F1 score, with a Flask dashboard for real time status and model insight."
         }
@@ -50,7 +51,7 @@
         {
           "when": "May – Jun 2025",
           "where": "U R Rao Satellite Centre, ISRO",
-          "logo": "/assets/img/logos/isro.svg",
+          "logo": "/assets/img/logos/isro.png",
           "role": "Research intern, Bangalore",
           "summary": "Physics informed autoencoder for denoising gyroscope telemetry and flagging non physical anomalies, integrated with cyclic redundancy checks into a hybrid detection pipeline that raised alerts minutes earlier than the existing rule based checks.",
           "link": {
@@ -77,6 +78,7 @@
         {
           "when": "Oct 2023 – Nov 2024",
           "where": "Atal Tinkering Lab, Mallasajjan English Medium School",
+          "logo": "/assets/img/logos/atal-innovation-mission.png",
           "role": "Volunteer teacher",
           "summary": "Taught embedded electronics to high school students: microcontrollers, sensors, C and Python, and 3D modelling in Fusion 360. Supervised projects from schematic to demo and mentored teams in national hackathons, several finishing in the top 10% nationally."
         }

@@ -3,14 +3,14 @@
 <p class="sub-band">{{ group.group }}</p>
 {%- for item in group.items %}
 <div class="xp">
-  <span class="when">{{ item.when }}</span>
+  <div class="when-col">
+    <span class="when">{{ item.when }}</span>
+    {%- if item.logo %}
+    <img class="org-logo" src="{{ item.logo }}" alt="" width="64" height="64" loading="lazy">
+    {%- endif %}
+  </div>
   <div>
-    <div class="where">
-      {%- if item.logo %}
-      <img class="org-logo" src="{{ item.logo }}" alt="" width="36" height="36" loading="lazy">
-      {%- endif %}
-      <span>{{ item.where }}</span>
-    </div>
+    <div class="where">{{ item.where }}</div>
     <div class="what">{{ item.role }}</div>
     <p>{{ item.summary }}</p>
     {%- if item.link %}
