@@ -11,6 +11,7 @@
 .when-col {
   display:flex;
   flex-direction:column;
+  align-items:center;
   gap:12px;
 }
 
@@ -19,6 +20,7 @@
   font-size:13.5px;
   color:var(--ink-soft);
   padding-top:3px;
+  text-align:center;
 }
 
 .xp .where {
@@ -33,7 +35,6 @@
   border-radius:14px;
   box-shadow:0 0 0 1px var(--rule);
   flex-shrink:0;
-  align-self:center;
 }
 
 .xp .what {
