@@ -14,6 +14,7 @@
         {
           "when": "Aug – Oct 2024",
           "where": "Strative.ai",
+          "logo": "/assets/img/logos/strative.png",
           "role": "ML Engineer intern, remote",
           "summary": "Retrieval augmented generation pipeline with LangChain, Llama 3, Elasticsearch and Milvus, reaching 89% top-10 retrieval accuracy on Natural Questions. Deployed with Ray on GKE, cutting ingestion, retrieval and evaluation time by 40%.",
           "details": "rag"
