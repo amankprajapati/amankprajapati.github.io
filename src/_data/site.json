@@ -3,7 +3,7 @@
   "title": "Aman Kumar Prajapati",
   "description": "Research portfolio of Aman Kumar Prajapati: self-supervised learning, learning from imperfect data, physics informed models and AI for cancer diagnostics.",
   "role": "AI and Computer Vision Engineer, Big Vision LLC, Bangalore",
-  "statement": "I work on making vision models small enough and stable enough to run where the data actually is: on a microscope slide scanner, on a satellite bus, on a single GPU serving fifty live cameras.",
+  "statement": "I work on making vision models small enough, through quantization, and stable enough to run where the data actually is: on a microscope slide scanner, on a satellite bus, on a single GPU serving fifty live cameras.",
   "sub": "That has taken me through self supervised detection for pathology, physics informed anomaly detection, quantization aware training, and sensor fusion for grain storage. The thread is the same across all of them: work out what the constraint really is, then design the representation around it.",
   "interests": [
     {
@@ -20,7 +20,7 @@
     },
     {
       "title": "AI for medicine",
-      "text": "Developing foundation models for medicine, pretrained at scale on pathology and clinical data, alongside quantitative, interpretable tools for cancer diagnosis."
+      "text": "Developing medical foundation models for cancer detection and diagnosis pretrained on pathology and clinical data, and deployable, interpretable tools for detection and diagnosis across other medical domains."
     }
   ],
   "links": [

@@ -7,7 +7,7 @@
           "when": "Jan 2026 – present",
           "where": "Big Vision LLC",
           "logo": "/assets/img/logos/big-vision.png",
-          "role": "AI and Computer Vision Engineer, Bangalore. Intern from January to May 2026",
+          "role": "AI and Computer Vision Engineer, Bangalore. Intern Jan – May 2026, full-time from May 2026",
           "summary": "End to end computer vision pipelines for client deployments, containerized with Docker and Kubernetes and distributed with Ray. Accelerated vision language model inference with vLLM, integrated Kafka for real time streaming, and tuned Qwen3-VL variants. Current build handles 50 parallel live streams under one second on a single RTX 5090.",
           "details": "video-pipeline"
         },
@@ -44,7 +44,7 @@
           "where": "Medical Intelligence, Neuroimaging and Data Lab, IIT Ropar",
           "logo": "/assets/img/logos/iit-ropar.png",
           "role": "Research intern, Rupnagar",
-          "summary": "Built the end to end pipeline for quantifying HER2 and CEP17 gene signals in D-DISH pathology images, combining self supervised contrastive pretraining with a YOLO detector. Assembled and annotated the dataset behind it. Manuscript under review at MICCAI 2026.",
+          "summary": "Built the end to end pipeline for quantifying HER2 and CEP17 gene signals in D-DISH pathology images, combining self supervised contrastive pretraining with a YOLO detector, in collaboration with Homi Bhabha Cancer Hospital (HBCH), Chandigarh. Assembled and annotated the dataset behind it. Manuscript under review at MICCAI 2026.",
           "link": {
             "href": "#ddish",
             "label": "See the project under current research"
