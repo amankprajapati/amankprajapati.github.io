@@ -8,7 +8,7 @@
           "where": "Big Vision LLC",
           "logo": "/assets/img/logos/big-vision.png",
           "role": "AI and Computer Vision Engineer, Bangalore. Intern Jan – May 2026, full-time from May 2026",
-          "summary": "End to end computer vision pipelines for client deployments, containerized with Docker and Kubernetes and distributed with Ray. Accelerated vision language model inference with vLLM, integrated Kafka for real time streaming, and tuned Qwen3-VL variants. Current build handles 50 parallel live streams under one second on a single RTX 5090.",
+          "summary": "End to end computer vision pipelines for client deployments, containerized with Docker and Kubernetes and distributed with Ray. Accelerated vision language model inference with vLLM, integrated Kafka for real time streaming, and tuned Qwen3-VL variants. Current build handles 50 parallel live streams under one second on a single RTX 5090. Built synthetic data generation pipelines using open-source VLMs, GANs, and diffusion models to produce images and videos for training VLMs and detection/segmentation models.",
           "details": "video-pipeline"
         },
         {
@@ -32,7 +32,7 @@
           "where": "Humors Tech",
           "logo": "/assets/img/logos/humors-tech.png",
           "role": "Data Scientist intern, remote, biotech startup",
-          "summary": "RNN and LSTM models in PyTorch classifying lung health as poor, normal or good from breath sensor data, reaching a 92% F1 score, with a Flask dashboard for real time status and model insight."
+          "summary": "Worked with breath-pressure time-series data from multiple users collected on Respyr, the company's handheld breath-analysis device, using a guided 16-second cycle (4 s pause, 4 s inhale, 4 s hold, 4 s exhale) repeated per session. Cleaned and prepared raw sensor recordings for modelling, removing incomplete and noisy breath cycles and normalising pressure values across users. Trained RNN/LSTM classifiers in PyTorch on the airflow force (pressure) profiles to grade lung health as Poor, Normal, or Good, achieving 92% F1 score."
         }
       ]
     },
