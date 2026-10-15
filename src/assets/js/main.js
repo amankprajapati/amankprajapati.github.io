@@ -1,6 +1,7 @@
 // Entry point. Each module is independent and safe to run on any page.
 import { observeFigures } from "./modules/figure-observer.js";
 import { initSectionNav } from "./modules/section-nav.js";
+import { initJumpLinks } from "./modules/jump-links.js";
 import { initGrainFields } from "./modules/grain-fields.js";
 import { initIsroTimeline } from "./modules/figures/isro-timeline.js";
 import { initMedmnistRouter } from "./modules/figures/medmnist-router.js";
@@ -9,6 +10,7 @@ import { initDownfallSim } from "./modules/figures/downfall-sim.js";
 
 observeFigures();
 initSectionNav();
+initJumpLinks();
 initGrainFields();
 initIsroTimeline();
 initMedmnistRouter();

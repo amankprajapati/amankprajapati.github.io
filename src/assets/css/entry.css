@@ -130,3 +130,29 @@ details.more:not([open]) > summary .label-open {
   background:#EFEDF8;
   color:var(--violet);
 }
+
+/* where a "See the project" link lands: a little room above, and a brief highlight */
+.entry {
+  scroll-margin-top:28px;
+}
+
+.entry.landed {
+  animation:landed 2.2s ease-out;
+}
+
+@keyframes landed {
+  0%,25% {
+    box-shadow:0 0 0 10px var(--accent-wash);
+    background:var(--accent-wash);
+  }
+  100% {
+    box-shadow:0 0 0 10px transparent;
+    background:transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry.landed {
+    animation:none;
+  }
+}
