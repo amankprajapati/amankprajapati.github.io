@@ -26,6 +26,12 @@
 /* education: logo only on the left, centred against the text; the dates sit in the body */
 .xp-edu {
   align-items:center;
+  padding:24px 0;
+}
+
+/* sit midway between the section rule and the row's bottom rule */
+.band-title + .xp-edu {
+  margin-top:-30px;
 }
 
 .xp .where {
