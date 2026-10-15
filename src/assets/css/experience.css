@@ -25,6 +25,12 @@
 
 .xp-edu {
   padding:24px 0;
+  align-items:center;         /* short entry: logo alone on the left, centred against the text */
+}
+
+.xp .when-inline {
+  text-align:left;
+  padding-top:2px;
 }
 
 /* sit midway between the section rule and the row's bottom rule */
