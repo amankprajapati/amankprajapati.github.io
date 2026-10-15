@@ -119,9 +119,9 @@
 <circle cx="510" cy="114" r="4.5" fill="#EDE9F8" stroke="#8B7FC7"/><circle class="anim" cx="510" cy="114" r="4.5" fill="#8B7FC7" style="opacity:0;animation:qglow 4s linear 2.95s infinite"/>
 <circle cx="510" cy="140" r="4.5" fill="#EDE9F8" stroke="#8B7FC7"/><circle class="anim" cx="510" cy="140" r="4.5" fill="#8B7FC7" style="opacity:0;animation:qglow 4s linear 2.95s infinite"/>
 <circle cx="510" cy="166" r="4.5" fill="#EDE9F8" stroke="#8B7FC7"/><circle class="anim" cx="510" cy="166" r="4.5" fill="#8B7FC7" style="opacity:0;animation:qglow 4s linear 2.95s infinite"/>
-<circle class="anim" cx="540" cy="84" r="5" fill="#DCE4EF" stroke="var(--accent)" style="opacity:.35;animation:qglow 4s linear 3.20s infinite"/>
-<circle class="anim" cx="540" cy="114" r="5" fill="#DCE4EF" stroke="var(--accent)" style="opacity:.35;animation:qglow 4s linear 3.28s infinite"/>
-<circle class="anim" cx="540" cy="144" r="5" fill="#DCE4EF" stroke="var(--accent)" style="opacity:.35;animation:qglow 4s linear 3.36s infinite"/>
+<circle cx="540" cy="84" r="5" fill="#DCE4EF" stroke="var(--accent)"/><circle class="anim" cx="540" cy="84" r="5" fill="var(--accent)" style="opacity:0;animation:qglow 4s linear 3.20s infinite"/>
+<circle cx="540" cy="114" r="5" fill="#DCE4EF" stroke="var(--accent)"/><circle class="anim" cx="540" cy="114" r="5" fill="var(--accent)" style="opacity:0;animation:qglow 4s linear 3.28s infinite"/>
+<circle cx="540" cy="144" r="5" fill="#DCE4EF" stroke="var(--accent)"/><circle class="anim" cx="540" cy="144" r="5" fill="var(--accent)" style="opacity:0;animation:qglow 4s linear 3.36s infinite"/>
 <circle cx="566" cy="114" r="5.5" fill="var(--accent)"/><circle class="anim" cx="566" cy="114" r="10" fill="var(--accent)" style="opacity:0;animation:qglow 4s linear 3.45s infinite"/>
 <text class="svg-label" x="504" y="192" style="font-size:11px">classical</text><text class="svg-label" x="504" y="206" style="font-size:11px">NN head</text>
 <path class="arrow" d="M580,114 L594,114"/>
