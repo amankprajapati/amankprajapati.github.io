@@ -23,6 +23,11 @@
   text-align:center;
 }
 
+/* education: logo only on the left, centred against the text; the dates sit in the body */
+.xp-edu {
+  align-items:center;
+}
+
 .xp .where {
   font-weight:600;
   font-size:18px;
