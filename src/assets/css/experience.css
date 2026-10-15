@@ -18,9 +18,8 @@
 .xp .when {
   font-family:var(--sans);
   font-size:13.5px;
-  color:var(--ink-soft);
-  padding-top:3px;
-  text-align:center;
+  color:var(--ink-faint);
+  margin-top:2px;
 }
 
 /* education: logo only on the left, centred against the text; the dates sit in the body */

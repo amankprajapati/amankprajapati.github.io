@@ -4,7 +4,6 @@
 {%- for item in group.items %}
 <div class="xp">
   <div class="when-col">
-    <span class="when">{{ item.when }}</span>
     {%- if item.logo %}
     <img class="org-logo" src="{{ item.logo }}" alt="" width="96" height="96" loading="lazy">
     {%- endif %}
@@ -12,6 +11,7 @@
   <div>
     <div class="where">{{ item.where }}</div>
     <div class="what">{{ item.role }}</div>
+    <div class="when">{{ item.when }}</div>
     <p>{{ item.summary }}</p>
     {%- if item.link %}
     <a class="jump" href="{{ item.link.href }}">{{ item.link.label }}</a>
