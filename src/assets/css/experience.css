@@ -22,9 +22,7 @@
   margin-top:2px;
 }
 
-/* education: logo only on the left, centred against the text; the dates sit in the body */
 .xp-edu {
-  align-items:center;
   padding:24px 0;
 }
 
@@ -39,8 +37,9 @@
 }
 
 .org-logo {
-  width:96px;
-  height:96px;
+  /* as tall as the heading block (organisation, role, dates) so it lines up with those three lines */
+  width:77px;
+  height:77px;
   object-fit:cover;
   border-radius:14px;
   box-shadow:0 0 0 1px var(--rule);
