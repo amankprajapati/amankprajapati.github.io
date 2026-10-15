@@ -66,6 +66,10 @@
       "label": "Experience"
     },
     {
+      "id": "education",
+      "label": "Education"
+    },
+    {
       "id": "publications",
       "label": "Publications and posters"
     },
